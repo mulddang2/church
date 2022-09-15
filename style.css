@@ -1,0 +1,177 @@
+body {
+    background-color: #eee;
+    padding-top: 82px;
+    height: 3000px;
+}
+header {
+    width: 100%;
+    /* background: linear-gradient(
+        white 82px,
+        rgba(255, 255, 255, 0.75) 82px,
+        rgba(255, 255, 255, 0.75)
+    ); */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    transition: height 0.4s;
+    white-space: nowrap;
+}
+.header-wrap {
+    /* height: 614px; -+높이값 없애기 */
+    width: 100%;
+    z-index: 50;
+    /* background-color: #fff; ++이거없애기  */
+}
+.header-top {
+    width: 100%;
+    background-color: #fff;
+}
+header .content-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 82px;
+    width: 84%;
+    /* max-width: 1630px; */
+    z-index: 99;
+}
+.content-inner {
+    width: 96%;
+    margin: 0 auto;
+}
+
+#gnb-wrap {
+    position: absolute;
+    top: 0;
+    left: 15.78vw;
+}
+#gnb-wrap li {
+    width: 9.53vw;
+}
+.lnb-line {
+    display: none;
+}
+.header-top:hover .lnb-line {
+    display: block;
+    width: 100%;
+    height: 1000px;
+    background: rgba(255, 255, 255, 0.93);
+    border-top: 1px solid #CCC;
+}
+.gnb-depth1 {
+    display: flex;
+}
+#gnb-wrap .gnb-depth1 li a:hover {
+    color: var(--light-green);
+}
+#gnb-wrap .gnb-depth1 li:hover a span {
+    color: var(--light-green);
+}
+#gnb-wrap .gnb-depth1 li:hover > .gnb-depth2 {
+    border-top: 3px solid #337752;
+    background-color: var(--light-yellow);
+}
+#gnb-wrap .gnb-depth2 {
+    padding: 0.52vw 0 1.04vw;
+    border-top: 3px solid transparent;
+}
+.gnb-depth1 > li > a,
+.utility li a {
+    color: #1e1e1e;
+}
+.gnb-depth1 > li > a {
+    display: flex;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 26px;
+}
+/* .gnb-depth1 a:hover {
+    color: var(--light-green);
+} */
+.gnb-depth2 {
+    border-left: 1px solid #c0c0c0;
+    height: 100%;
+    overflow-wrap: break-word;
+}
+.gnb-depth1 li:last-child .gnb-depth2 {
+    border-right: 1px solid #c0c0c0;
+}
+.gnb-depth2 > li {
+    cursor: pointer;
+}
+.gnb-depth2 > li > a,
+.gnb-depth3 li a {
+    display: block;
+    padding: 5px 2.6% 0.52vw 5%;
+    text-align: left;
+    font-size: 1.13rem;
+    color: #505050;
+}
+.gnb-depth3 {
+    background-color: #fbfbfb;
+    border-right: 1px solid #c0c0c0;
+    display: none;
+}
+.gnb-depth3 li a {
+    font-size: 0.94rem;
+    font-weight: 300;
+}
+li.has-depth {
+    position: relative;
+}
+.has-depth b {
+    font-weight: 400;
+}
+li.has-depth > a::before,
+li.has-depth > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    transition: transform 0.25s ease-out;
+    background-color: var(--light-green);
+}
+/* vertical line */
+li.has-depth > a::before {
+    /* right: 15px; */
+    right: 0.78vw;
+    top: 13px;
+    width: 2px;
+    height: 11px;
+    background-color: var(--light-green);
+}
+/* horizontal line */
+li.has-depth > a::after {
+    width: 12px;
+    height: 2px;
+    /* right: 10px; */
+    right: 0.48vw;
+    top: 17px;
+}
+.gnb-depth2 .has-depth > a.on::before {
+    transform: rotate(90deg);
+}
+.gnb_depth2 .has-depth > a.on::after {
+    transform: rotate(180deg);
+}
+
+.utility {
+    display: flex;
+    align-items: center;
+}
+.utility li a {
+    font-size: 0.94rem;
+    font-weight: 300;
+    padding: 30px 1.46vw 30px 0;
+}
+.utility button {
+    display: inline-block;
+    background: url("./images/icon/magnifer.svg") no-repeat center;
+    width: 16px;
+    height: 16px;
+    padding: 43px 0 23px;
+}

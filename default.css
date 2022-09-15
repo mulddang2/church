@@ -1,0 +1,34 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+
+/* Color */
+:root {
+    --light-green: #83ae50;
+    --light-yellow: #f4eedb;
+}
+
+/* reset */
+body, div, ul, p, h1, h2, h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+}
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* font Size */
+body { font-size: 16px;}
