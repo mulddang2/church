@@ -35,13 +35,14 @@ header .content-inner {
     align-items: center;
     position: relative;
     height: 82px;
-    width: 84%;
+    width: 86%;
     /* max-width: 1630px; */
     z-index: 99;
+    border: 1px solid red;
 }
 .content-inner {
-    width: 96%;
     margin: 0 auto;
+    border: 1px solid #000;
 }
 
 #gnb-wrap {
@@ -51,6 +52,7 @@ header .content-inner {
 }
 #gnb-wrap li {
     width: 9.53vw;
+    /* width: 183px; */
 }
 .lnb-line {
     display: none;
@@ -160,6 +162,7 @@ li.has-depth > a::after {
 }
 
 .utility {
+    justify-content: space-between;
     display: flex;
     align-items: center;
 }
