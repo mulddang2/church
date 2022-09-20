@@ -32,6 +32,9 @@ $('.gnb-depth2 .has-depth > a').not(".on").attr("aria-expanded","false");
 $('.gnb-depth2 .has-depth > a').on('click',function(){
     $(this).toggleClass('on');
     $(this).closest('.has-depth').find('.gnb-depth3').slideToggle();
+    //만약, has-depth에 on이 붙어있으면, 제거한다
+
+
 //3뎁스 메뉴확장 접근성
 if($(this).hasClass('on')){
         $(this).attr("aria-expanded","true");

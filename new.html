@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
-    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="./last/default.css" />
+    <link rel="stylesheet" href="new.css">
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
                 <div class="content-inner">
                     <h1>
                         <a href="#">
-                            <img src="" alt="">
+                            <img src="./images/logo/logo.png" alt="분당우리교회">
                         </a>
                     </h1>
                     <ul class="utility">
@@ -24,14 +25,14 @@
                         <li>
                             <a href="#">회원가입</a>
                         </li>
+                        <li class="search-bar">
+                            <label for="search">검색어</label>
+                            <input type="text" id="search" placeholder="검색" autocomplete="off">
+                            <button type="button">
+                                <img src="./images/magnifer.svg" alt="검색하기">
+                            </button>
+                        </li>
                     </ul>
-                    <div>
-                        <label for="search">검색어</label>
-                        <input type="text" id="search" placeholder="검색">
-                        <button type="button">
-                            <img src="" alt="">
-                        </button>
-                    </div>
                 </div>
             </div>
             <!-- header-top -->
@@ -284,5 +285,9 @@
             <!-- header-bottom-->
         </div>
     </header>
+
+    <!-- jQuery CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

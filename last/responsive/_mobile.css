@@ -1,0 +1,91 @@
+@media screen and (max-width: 767px) {
+    .inner {
+        width: 94.78%;
+        display: inherit;
+    }
+    .news li {
+        width: calc(100% - 13px);
+
+    }
+    .ct1_img {
+        width: 53.93vw;
+        height: 46.56vh;
+        margin: 0 auto;
+        margin-top: 4.39vh;
+    }
+    .ct1 {
+        padding-top: 0;
+    }
+    .ct1 .inner_text ul li::before {
+        width: 0.5vw;
+        margin-right: 0.8vw;
+    }
+    a.ct_prev.prev, a.ct_next.next {
+        width: 35px;
+        height: 35px;
+    }
+
+    
+    
+    
+    
+    /*모바일 폰트관련 */
+    .ct1 > .inner {
+        text-align: center;
+    }
+    .ct1 ul li {
+        text-align: left;
+    }
+    .title_mini, .title_desc {
+        margin: 0 auto;
+    } 
+    .title_mini span {
+        font-size: var(--minimum-m);
+    }
+    .title_text h2 {
+        font-size: var(--h2-m);
+    }
+    .title_desc {
+        font-size: var(--enhance-m);
+        line-height: 1.8rem;
+        width: 61.72vw;
+    }
+    .ct1 .inner_text ul {
+        font-size: var(--enhance-m);
+        width: fit-content;
+        margin: 3.85vh auto 0;
+
+    }
+    .title_center_text span {
+        font-size: var(--minimum-m);
+    }
+    div[class^="title"] h2 {
+        font-size: var(--h2-m);
+    }
+    a.all_tab_m {
+        font-size: var(--enhance-m);
+        height: 35px;
+        line-height: 35px;
+    }
+    .new {
+        font-size: var(--minimum-m);
+        width: fit-content;
+    }
+    .news_title {
+        font-size: var(--h3-m);
+    }
+    .news_date {
+        font-size: var(--enhance-m);
+    }
+    .board div[class^=board_], 
+    .board p[class^=board_] {
+        font-size: var(--enhance-m);
+    }
+    #footer ul li a {
+        font-size: var(--enhance-m);
+    }
+    .footer_address,
+    .copyright {
+        font-size: var(--minimum-m);
+    }
+}
