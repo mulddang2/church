@@ -3,6 +3,7 @@
     /*color*/
     --light-green: #83ae50;
     --light-yellow: #f4eedb;
+    --point-green: #337752;
 
     /* font-size tablet */
     --minimum-t: clamp(0.8rem, 0.71vw, 1rem);
@@ -33,24 +34,6 @@ html {
     font-size: 62.5%;
 }
 
-#header {
-    background-color: #fff;
-    position: fixed;
-    z-index: 99;
-    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
-}
-.header_top {
-    background-color: #fff;
-}
-.header_top_inner a {
-    color: #1e1e1e;
-}
-#header h1 a {
-    background: url("./images/logo.png") no-repeat center / contain;
-}
-ul.gnb {
-    background-color: #fff;
-}
 
 /* 메인사진 페이저  */
 #main .mainvisual .slick-dots li {

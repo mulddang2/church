@@ -10,7 +10,8 @@ header {
 }
 .header-wrap {
     width: 100%;
-    height: 140px;
+    /* height: 140px; */
+    /* overflow: hidden; */
     box-shadow:  0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .header-top {
@@ -28,6 +29,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+h1 img {
+    width: 163px;
+    height: 50px;
+}
 .utility {
     display: flex;
     height: 100%;
@@ -41,6 +46,9 @@ header {
     display: inline-block;
     color: #1e1e1e;
     font-size: 13px;
+}
+.utility a:hover {
+    color: var(--light-green)
 }
 .utility .search-bar {
     /* width: 242px; */
@@ -86,6 +94,13 @@ header {
 .gnb-depth1 > li {
     width: calc(100% / 6);
 }
+.gnb-depth1 li:hover  > a {
+    color: var(--light-green);
+}
+.gnb-depth1 li:hover .gnb-depth2 {
+    background-color: var(--light-yellow);
+    border-top: 3px solid var(--point-green);
+}
 .gnb-depth1 > li > a {
     text-align: center;
     color: #1e1e1e;
@@ -100,6 +115,7 @@ header {
     padding: 10px 0 20px 0;
     border-left: 1px solid #c0c0c0;
     height: 100%;
+    border-top: 3px solid transparent;
 
 
 }
@@ -134,7 +150,7 @@ header {
     display: block;
     position: absolute;
     transition: transform 0.25s ease-out;
-    background-color: var(--light-green);
+    background-color: var(--point-green);
 }
 .has-depth b {
     font-weight: 400;
@@ -145,7 +161,7 @@ header {
     top: 9px;
     width: 1px;
     height: 9px;
-    background-color: var(--light-green);
+    background-color: var(--point-green);
 }
 /* horizontal line */
 .has-depth > a::after {
