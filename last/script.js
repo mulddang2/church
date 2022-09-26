@@ -17,10 +17,10 @@ $(document).ready(function () {
     });
     $(".gallery_all").slick({
         slidesToShow: 3,
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 1500,
         centerMode: true,
-        centerPadding: "100px",
+        centerPadding: "12.63vw",
         infinite: true,
         prevArrow: $(".gallery_prev"),
         nextArrow: $(".gallery_next"),

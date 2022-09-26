@@ -520,17 +520,16 @@ a.all_tab_m {
 
 
 /* ct4 갤러리 컨텐츠  */
-
-.gallery_box img {
-    background: rgba(255, 255, 255, 0.29);
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.16);
-    border: 1px solid #000;
+.ct4 .gallery_box img {
+    max-width: 85%;
+    height: 290px;
 }
 .gallery_all .slick-list {
     overflow: visible;
 }
+
 /* .gallery_box.slick-slide {
-    margin: 0 30px;
+    margin: 0 1.56vw;
 } */
 /* ct5 게시판 컨텐츠  */
 .ct5 .inner {

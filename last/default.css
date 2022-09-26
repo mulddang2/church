@@ -150,13 +150,11 @@ a.all:hover, a.all_tab_m:hover {
 
 /* ct4 갤러리 컨텐츠  */
 .gallery_box img {
-    background: rgba(255, 255, 255, 0.29);
+    background-color: rgba(23, 23, 23, 0.5);
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.16);
-
 }
 .slick-current.gallery_box img {
     box-shadow: 0px 11px 11px 2px rgba(23, 23, 23, 0.5);
-
 }
 
 
