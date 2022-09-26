@@ -140,6 +140,9 @@ function vh(v) {
     return (v * h) / 100;
 }
 
+/* dropMenu */
+let header = document.querySelector
+
 /* header +버튼 */
 let hasDepthArr = document.querySelectorAll(".has-depth > a");
 let gnbDepth3Arr = document.querySelectorAll(".gnb-depth3");
