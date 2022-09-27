@@ -70,11 +70,17 @@
     left: 0;
     z-index: 3;
     background-color: #fff;
-    /* overflow: hidden; */
+    overflow: hidden;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .header-bottom .content-inner {
     width: 62.5%;
     margin: 0 auto;
+    border: 1px solid red;
 }
 .gnb-line {
     width: 100%;
@@ -534,7 +540,7 @@ a.all_tab_m {
 /* ct4 갤러리 컨텐츠  */
 .ct4 .gallery_box img {
     max-width: 85%;
-    height: 290px;
+    height: 100%;
 }
 .gallery_all .slick-list {
     overflow: visible;

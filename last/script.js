@@ -29,13 +29,16 @@ $(document).ready(function () {
                 breakpoint: 1269,
                 settings: {
                     slidesToShow: 2,
+                    centerMode: true,
+
                 },
             },
             {
                 breakpoint: 768, //화면 너비가 768이상일 때
                 settings: {
                     slidesToShow: 1,
-                    centerMode: false,
+                    centerPadding: "122px",
+                    centerMode: true,
                 },
             },
         ],
@@ -84,6 +87,14 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     centerMode: false,
+                },
+            },
+            {
+                breakpoint: 360, //화면 너비가 768이상일 때
+                settings: {
+                    slidesToShow: 1,
+                    //centerMode: true,
+                    centerPadding: "71px"
                 },
             },
         ],
@@ -169,6 +180,20 @@ var header = document.querySelector(".header-wrap"),
     console.log(subMenu)
         
 
+
+//sticky header-bottom 
+    window.onscroll = function() {myFunction()};
+
+var navbar = document.querySelector(".header-bottom");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+} else {
+    navbar.classList.remove("sticky");
+}
+}
 
 
 

@@ -2,20 +2,32 @@
 @media screen and (max-width: 1270px) {
     /* --------- 태블릿 헤더---------- */
     #header,
-    .quick_menu {
+    .quick_menu, .header-top {
         display: none;
     }
     #header_tab {
         display: block;
     }
     .ct5 .inner {
-        display: inherit;
+        /* display: inherit; */
+        width: 94%;
     }
     .inner {
         width: 94%;
     }
+    .header-bottom {
+        display: none;
+    }
+    .header-wrap {
+        height: 82px;
+        background: none;
+        box-shadow: none;
+    }
 
     /* 메인사진 */
+    #main {
+        padding-top: 0;
+    }
     #main .mainvisual {
         display: none;
     }
@@ -61,31 +73,6 @@
         /* border-radius: 11px; */
         /* background-color: var(--light-green); */
     }
-    /* .mainvisual_tab ul li.pager a {
-        display: inline-block;
-        border: 0.05vw solid #dfdfdf;
-        width: 0.78vw;
-        height: 0.78vw;
-        z-index: 2;
-        margin-right: 0.78vw;
-    } */
-    /* #main .slick-dotted.slick-slider {
-        margin-bottom: 0;    
-    } */
-
-    /* ct1  */
-
-    /* #main .ct1, .ct1_img {
-        visibility: visible;
-    } */
-
-    /* .ct1 {
-        padding-top: 6.25vw;
-    } */
-    /* .ct1_img {
-        width: 36.93vw;
-        height: 35.56vh;
-    } */
     .ct1 > .inner {
         /* width: 94%; */
         justify-content: space-around;
@@ -94,17 +81,6 @@
         /* padding: 0 3%; */
         /* border: 1px solid #000; */
     }
-    /* .ct1 .inner_text ul li::before {
-        content: "";
-        width: 0.16vw;
-        height: 2.5vh;
-        display: inline-block;
-        margin-right: 0.47vw;
-        vertical-align: middle;
-    } */
-    /* .ct1 .inner_text ul li:not(:last-child) {
-        margin-bottom: 2.31vh;
-    } */
     .title_mini span {
         font-size: var(--minimum-t);
     }
@@ -136,7 +112,6 @@
 
     /* content 공통  */
 
-    .ct1,
     .ct2,
     .ct3,
     .ct4,
@@ -245,6 +220,7 @@
     } */
     .ct3 .inner {
         display: block;
+        width: 94%;
     }
     .ct3 ul {
         width: 100%;
