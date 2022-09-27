@@ -36,19 +36,16 @@
 }
 
 /* header */
-header {
-    
-}
 .header-wrap {
-    height: 547px;
     width: 100%;
+    height: 140px;
     z-index: 3;
     position: absolute;
     left: 0;
     right: 0;
     overflow: hidden;
     box-shadow:  0px 2px 5px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(white 140px, rgba(255, 255, 255, 0.5)) 140px, rgba(255, 255, 255, 0.703);
+    background: linear-gradient(white 138px, rgba(255, 255, 255, 0.5)) 140px, rgba(255, 255, 255, 0.703);
 }
 .header-top {
     width: 100%;
@@ -67,11 +64,13 @@ header {
 }
 .header-bottom {
     width: 100%;
+    height: 50px;
     position: absolute;
     top: 90px;
     left: 0;
     z-index: 3;
-    /* background: linear-gradient(white 40px, rgba(255, 255, 255, 0.674)) 50px, rgba(255, 255, 255, 0.603); */
+    background-color: #fff;
+    /* overflow: hidden; */
 }
 .header-bottom .content-inner {
     width: 62.5%;
@@ -139,21 +138,13 @@ h1 img {
     display: flex;
     justify-content: space-between;
 }
-.gnb-depth1 li {
+.gnb-depth1 > li {
     width: calc(100% / 6);
     white-space: nowrap;
     position: relative;
 }
-.gnb-depth1 li ul {
-    padding: 20px 0;
-}
 .gnb-depth1 li:hover  > a {
     color: var(--light-green);
-}
-.gnb-depth1 li:hover .gnb-depth2 {
-    border-top: 3px solid var(--point-green);
-    background-color: #f4eedbd0;
-    
 }
 .gnb-depth1 > li > a {
     text-align: center;
@@ -171,10 +162,16 @@ h1 img {
 .gnb-depth2 {
     height: 100%;
     border-top: 3px solid transparent;
+    padding-top: 10px;
 }
 .gnb-depth2 a {
     color: #505050;
     font-size: 14px;
+}
+.gnb-depth1 li:hover .gnb-depth2 {
+    border-top: 3px solid var(--point-green);
+    background-color: #f4eedbd0;
+    
 }
 
 .gnb-depth2 > li > a,
@@ -184,9 +181,9 @@ h1 img {
     text-align: left;
     color: #505050;
 }
-.gnb-depth3 {
+.gnb-depth3 li {
     background-color: #fbfbfb;
-    display: none;
+    /* display: none; */
 }
 .gnb-depth3.on {
     display: block;
@@ -195,7 +192,10 @@ h1 img {
     font-size: 13px;
     font-weight: 300;
 }
-
+.has-depth > a {
+    position: relative;
+    border: 1px solid #000;
+}
 .has-depth > a::before,
 .has-depth > a::after {
     content: "";
@@ -203,14 +203,15 @@ h1 img {
     position: absolute;
     transition: transform 0.25s ease-out;
     background-color: var(--point-green);
+    z-index: 4;
 }
 .has-depth b {
     font-weight: 400;
 }
 /* vertical line */
 .has-depth > a::before {
-    right: -141px;
-    top: 9px;
+    right:  14px;
+    top: 10px;
     width: 1px;
     height: 9px;
     background-color: var(--point-green);
@@ -219,7 +220,7 @@ h1 img {
 .has-depth > a::after {
     width: 9px;
     height: 1px;
-    right: -145px;
+    right: 10px;
     top: 13px;
 }
 .gnb-depth2 .has-depth > a.on::before {

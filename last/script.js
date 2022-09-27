@@ -141,15 +141,51 @@ function vh(v) {
 }
 
 /* dropMenu */
-let header = document.querySelector
+var header = document.querySelector(".header-wrap"),
+    gnbWrap = document.querySelectorAll(".gnb-depth1 > li"), //50
+    subMenu = document.querySelectorAll(".gnb-depth2 li"), //offsetHeight 410
+    hasDepth = document.querySelectorAll(".has-depth"); //176
+
+    headerHeight = header.offsetHeight,
+    hasDepthHeight = hasDepth.offsetHeight,
+    subMenuHeight = subMenu.offsetHeight
+
+    for(var i = 0; i < subMenu.length; i++) {
+        if(subMenu[i].offsetHeight > subMenuHeight){
+            subMenuHeight = subMenu[i].offsetHeight;
+        }
+    }
+
+    for(var i = 0; i < gnbWrap.length; i++) {
+        gnbWrap[i].addEventListener('mouseover', function(){
+            header.style.height = headerHeight + subMenuHeight + 'px';
+        })
+        gnbWrap[i].addEventListener('mouseout', function(){
+            header.style.height = headerHeight + 'px';
+        })
+    }
+    //console.log(gnbWrap)
+    //console.log(headerHeight) 140
+    console.log(subMenu)
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* header +버튼 */
 let hasDepthArr = document.querySelectorAll(".has-depth > a");
 let gnbDepth3Arr = document.querySelectorAll(".gnb-depth3");
-
-
-
-
 
 $(hasDepthArr).click(function (e) {
     console.log(e);
