@@ -3,7 +3,7 @@
     display: none;
 }
 #header_tab h1 {
-    background: url('./images/logo.png') no-repeat center / contain;
+    background: url("./images/logo.png") no-repeat center / contain;
     width: 210px;
     height: 42px;
     margin: 0 auto;
@@ -23,10 +23,12 @@
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-.burger_tab, .magnifer_tab {
+.burger_tab,
+.magnifer_tab {
     display: block;
 }
-.burger_tab img, .magnifer_tab img {
+.burger_tab img,
+.magnifer_tab img {
     width: 42px;
     height: 42px;
 }
@@ -44,8 +46,9 @@
     left: 0;
     right: 0;
     overflow: hidden;
-    box-shadow:  0px 2px 5px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(white 138px, rgba(255, 255, 255, 0.5)) 140px, rgba(255, 255, 255, 0.703);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(white 138px, rgba(255, 255, 255, 0.5)) 140px,
+        rgba(255, 255, 255, 0.703);
 }
 .header-top {
     width: 100%;
@@ -70,7 +73,7 @@
     left: 0;
     z-index: 3;
     background-color: #fff;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .sticky {
     position: fixed;
@@ -80,7 +83,6 @@
 .header-bottom .content-inner {
     width: 62.5%;
     margin: 0 auto;
-    border: 1px solid red;
 }
 .gnb-line {
     width: 100%;
@@ -88,6 +90,7 @@
     position: absolute;
     top: 50px;
     left: 0;
+    z-index: 1;
 }
 h1 img {
     width: 163px;
@@ -108,7 +111,7 @@ h1 img {
     font-size: 13px;
 }
 .utility a:hover {
-    color: var(--light-green)
+    color: var(--light-green);
 }
 .utility .search-bar {
     /* width: 242px; */
@@ -142,14 +145,17 @@ h1 img {
 }
 .gnb-depth1 {
     display: flex;
-    justify-content: space-between;
 }
 .gnb-depth1 > li {
     width: calc(100% / 6);
     white-space: nowrap;
     position: relative;
+    z-index: 2;
 }
-.gnb-depth1 li:hover  > a {
+.gnb-depth1 li:hover {
+    background-color: var(--light-yellow);
+}
+.gnb-depth1 li:hover > a {
     color: var(--light-green);
 }
 .gnb-depth1 > li > a {
@@ -161,35 +167,53 @@ h1 img {
     white-space: nowrap;
     font-size: 18px;
     font-weight: 500;
+    background-color: #fff;
+    margin-left: -1px;
+    margin-right: -1px;
 }
-.gnb-depth1 li:last-of-type > .gnb-depth2 {
-    /* border-right: 1px solid #c0c0c0; */
+/* .gnb-depth1 li::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+} */
+.gnb-depth1 > li {
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid transparent;
+}
+.gnb-depth1 > li:last-child {
+    border-right: 1px solid #c0c0c0;
 }
 .gnb-depth2 {
-    height: 100%;
     border-top: 3px solid transparent;
     padding-top: 10px;
+    position: relative;
 }
+
 .gnb-depth2 a {
     color: #505050;
     font-size: 14px;
 }
 .gnb-depth1 li:hover .gnb-depth2 {
     border-top: 3px solid var(--point-green);
-    background-color: #f4eedbd0;
-    
 }
 
 .gnb-depth2 > li > a,
-.gnb-depth3 li a {
+.gnb-depth3 > li > a {
     display: block;
-    padding: 5px 149px 5px 12px;
+    /* padding: 5px 149px 5px 12px; */
+    padding-left: 0.63vw;
+    height: 30px;
+    line-height: 30px;
     text-align: left;
     color: #505050;
 }
 .gnb-depth3 li {
     background-color: #fbfbfb;
-    /* display: none; */
 }
 .gnb-depth3.on {
     display: block;
@@ -198,9 +222,12 @@ h1 img {
     font-size: 13px;
     font-weight: 300;
 }
+.has-depth {
+    overflow: hidden;
+    height: 30px;
+}
 .has-depth > a {
     position: relative;
-    border: 1px solid #000;
 }
 .has-depth > a::before,
 .has-depth > a::after {
@@ -216,7 +243,7 @@ h1 img {
 }
 /* vertical line */
 .has-depth > a::before {
-    right:  14px;
+    right: 14px;
     top: 10px;
     width: 1px;
     height: 9px;
@@ -369,7 +396,6 @@ div[class^="title"] h2 {
     margin: 1.39vh 0 2.31vh;
     white-space: nowrap;
 }
-
 
 /* ct1  */
 .inner.ct1 {
@@ -536,7 +562,6 @@ a.all_tab_m {
     background-color: #83ae50;
 }
 
-
 /* ct4 갤러리 컨텐츠  */
 .ct4 .gallery_box img {
     max-width: 85%;
@@ -554,7 +579,8 @@ a.all_tab_m {
     width: 62.5%;
     margin: 0 auto;
 }
-.board_box1, .board_boxs {
+.board_box1,
+.board_boxs {
     height: 5.74vh;
     display: flex;
     align-items: center;

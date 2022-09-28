@@ -30,7 +30,6 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,
                     centerMode: true,
-
                 },
             },
             {
@@ -94,7 +93,7 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     //centerMode: true,
-                    centerPadding: "71px"
+                    centerPadding: "71px",
                 },
             },
         ],
@@ -153,67 +152,133 @@ function vh(v) {
 
 /* dropMenu */
 var header = document.querySelector(".header-wrap"),
-    gnbWrap = document.querySelectorAll(".gnb-depth1 > li"), //50
+    headerTop = document.querySelector(".header-top"),
+    headerBottom = document.querySelector(".header-bottom"),
+    gnbWrap = document.querySelector(".gnb-wrap"),
+    gnbDepth1 = document.querySelector(".gnb-depth1"),
+    lis = document.querySelectorAll(".gnb-depth1 > li"),
+    as = document.querySelectorAll(".gnb-depth1 > li > a"),
+    uls = document.querySelectorAll(".gnb-depth1 > li > ul"),
+    gnbDepth2s = document.querySelectorAll(".gnb-depth2"),
+
+    gnbDepth3 = document.querySelector(".gnb-depth3"),
+    gnbDepth3li = document.querySelector(".gnb-depth3 li"),
+    gnbDepth3lia = document.querySelector(".gnb-depth3 li > a"),
+
     subMenu = document.querySelectorAll(".gnb-depth2 li"), //offsetHeight 410
     hasDepth = document.querySelectorAll(".has-depth"); //176
 
-    headerHeight = header.offsetHeight,
-    hasDepthHeight = hasDepth.offsetHeight,
-    subMenuHeight = subMenu.offsetHeight
+// (headerHeight = header.offsetHeight),
+//     (hasDepthHeight = hasDepth.offsetHeight),
+//     (subMenuHeight = subMenu.offsetHeight);
 
-    for(var i = 0; i < subMenu.length; i++) {
-        if(subMenu[i].offsetHeight > subMenuHeight){
-            subMenuHeight = subMenu[i].offsetHeight;
-        }
-    }
+// for (var i = 0; i < subMenu.length; i++) {
+//     if (subMenu[i].offsetHeight > subMenuHeight) {
+//         subMenuHeight = subMenu[i].offsetHeight;
+//     }
+// }
 
-    for(var i = 0; i < gnbWrap.length; i++) {
-        gnbWrap[i].addEventListener('mouseover', function(){
-            header.style.height = headerHeight + subMenuHeight + 'px';
-        })
-        gnbWrap[i].addEventListener('mouseout', function(){
-            header.style.height = headerHeight + 'px';
-        })
-    }
-    //console.log(gnbWrap)
-    //console.log(headerHeight) 140
-    console.log(subMenu)
-        
+/**** 220928  depth3을 headerHeight에 포함시키기 ****/
+console.log("gnb-depth3 = " + gnbDepth3.scrollHeight);
+console.log("gnb-depth3 li > a = " + gnbDepth3lia.scrollHeight); //30px
+console.log("gnb-depth3 li > a = " + gnbDepth3lia.scrollHeight * 5); //150px
 
 
-//sticky header-bottom 
-    window.onscroll = function() {myFunction()};
+
+
+gnbWrap.addEventListener("mouseenter", function () {
+    console.log("mouseenter");
+
+    header.style.height = Number(header.scrollHeight) + (gnbDepth3lia.scrollHeight * 5) + "px"; 
+
+    console.log("header.style.height = " + header.style.height); //573px
+});
+
+
+gnbWrap.addEventListener("mouseleave", function () {
+    const headerTopHeight = headerTop.offsetHeight + header.style.marginTop + header.style.marginBottom;
+    const headerBottomHeight = headerBottom.offsetHeight + header.style.marginTop + header.style.marginBottom;
+
+    header.style.height = Number(headerTopHeight) + Number(headerBottomHeight) + "px";
+
+    console.log("header.style.height = " + header.style.height);
+});
+
+
+console.log("header.offsetHeight = " + header.offsetHeight);
+console.log("header.scrollHeight = " + header.scrollHeight);
+console.log("headerTop = " + headerTop.offsetHeight);
+console.log("headerBottom = " + headerBottom.offsetHeight);
+console.log("gnbWrap = " + gnbWrap.offsetHeight);
+console.log("gnbDepth1 = " + gnbDepth1.offsetHeight);
+for (var i = 0; i < lis.length; i++) {
+    console.log("li" + i + " = " + lis[i].offsetHeight);
+}
+for (var i = 0; i < as.length; i++) {
+    console.log("a" + i + " = " + as[i].offsetHeight);
+}
+for (var i = 0; i < uls.length; i++) {
+    console.log("ul" + i + " = " + uls[i].offsetHeight);
+}
+for (var i = 0; i < gnbDepth2s.length; i++) {
+    console.log("gnbDepth2" + i + " = " + gnbDepth2s[i].offsetHeight);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//sticky header-bottom
+window.onscroll = function () {
+    myFunction();
+};
 
 var navbar = document.querySelector(".header-bottom");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
-if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-} else {
-    navbar.classList.remove("sticky");
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* header +버튼 */
 let hasDepthArr = document.querySelectorAll(".has-depth > a");
 let gnbDepth3Arr = document.querySelectorAll(".gnb-depth3");
 
 $(hasDepthArr).click(function (e) {
-    console.log(e);
+    //console.log(e);
     // console.log(e.currentTarget.parentElement.querySelectorAll(".gnb-depth3"));
     // let gnbDepth3Arr = document.querySelectorAll(".gnb-depth3");
     // console.log(gnbDepth3Arr)
