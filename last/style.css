@@ -212,22 +212,26 @@ h1 img {
     text-align: left;
     color: #505050;
 }
+.gnb-depth3 {
+    display: none;
+}
+.gnb-depth.on {
+    display: block;
+}
 .gnb-depth3 li {
     background-color: #fbfbfb;
-}
-.gnb-depth3.on {
-    display: block;
 }
 .gnb-depth3 li a {
     font-size: 13px;
     font-weight: 300;
 }
 .has-depth {
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 30px;
 }
 .has-depth > a {
     position: relative;
+
 }
 .has-depth > a::before,
 .has-depth > a::after {
@@ -256,10 +260,13 @@ h1 img {
     right: 10px;
     top: 13px;
 }
-.gnb-depth2 .has-depth > a.on::before {
+.gnb-depth3.on {
+    display:block;
+}
+.has-depth > a.on::before {
     transform: rotate(90deg);
 }
-.gnb_depth2 .has-depth > a.on::after {
+.has-depth > a.on::after {
     transform: rotate(180deg);
 }
 

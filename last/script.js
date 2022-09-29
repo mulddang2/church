@@ -160,13 +160,11 @@ var header = document.querySelector(".header-wrap"),
     as = document.querySelectorAll(".gnb-depth1 > li > a"),
     uls = document.querySelectorAll(".gnb-depth1 > li > ul"),
     gnbDepth2s = document.querySelectorAll(".gnb-depth2"),
-
     gnbDepth3 = document.querySelector(".gnb-depth3"),
     gnbDepth3li = document.querySelector(".gnb-depth3 li"),
     gnbDepth3lia = document.querySelector(".gnb-depth3 li > a"),
-
-    subMenu = document.querySelectorAll(".gnb-depth2 li"), //offsetHeight 410
-    hasDepth = document.querySelectorAll(".has-depth"); //176
+    subMenu = document.querySelectorAll(".gnb-depth2 li"); //offsetHeight 410
+    
 
 // (headerHeight = header.offsetHeight),
 //     (hasDepthHeight = hasDepth.offsetHeight),
@@ -184,26 +182,46 @@ console.log("gnb-depth3 li > a = " + gnbDepth3lia.scrollHeight); //30px
 console.log("gnb-depth3 li > a = " + gnbDepth3lia.scrollHeight * 5); //150px
 
 
+let hasDeptha = document.querySelectorAll(".has-depth > a");
+console.log(hasDeptha);
+
+
+for (let i = 0; i < hasDeptha.length; i++)
+    hasDeptha[i].addEventListener("click", () => {
+        console.log(hasDeptha)
+    });
+    
+    document.addEventListener('click', function handleClick(event) {
+        event.target.classList.toggle('on');
+        
+    });
+
 
 
 gnbWrap.addEventListener("mouseenter", function () {
     console.log("mouseenter");
 
-    header.style.height = Number(header.scrollHeight) + (gnbDepth3lia.scrollHeight * 5) + "px"; 
+    header.style.height =
+        Number(header.scrollHeight) + gnbDepth3lia.scrollHeight * 5 + "px";
 
     console.log("header.style.height = " + header.style.height); //573px
 });
 
-
 gnbWrap.addEventListener("mouseleave", function () {
-    const headerTopHeight = headerTop.offsetHeight + header.style.marginTop + header.style.marginBottom;
-    const headerBottomHeight = headerBottom.offsetHeight + header.style.marginTop + header.style.marginBottom;
+    const headerTopHeight =
+        headerTop.offsetHeight +
+        header.style.marginTop +
+        header.style.marginBottom;
+    const headerBottomHeight =
+        headerBottom.offsetHeight +
+        header.style.marginTop +
+        header.style.marginBottom;
 
-    header.style.height = Number(headerTopHeight) + Number(headerBottomHeight) + "px";
+    header.style.height =
+        Number(headerTopHeight) + Number(headerBottomHeight) + "px";
 
     console.log("header.style.height = " + header.style.height);
 });
-
 
 console.log("header.offsetHeight = " + header.offsetHeight);
 console.log("header.scrollHeight = " + header.scrollHeight);
@@ -223,39 +241,6 @@ for (var i = 0; i < uls.length; i++) {
 for (var i = 0; i < gnbDepth2s.length; i++) {
     console.log("gnbDepth2" + i + " = " + gnbDepth2s[i].offsetHeight);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //sticky header-bottom
 window.onscroll = function () {
@@ -283,11 +268,9 @@ $(hasDepthArr).click(function (e) {
     // let gnbDepth3Arr = document.querySelectorAll(".gnb-depth3");
     // console.log(gnbDepth3Arr)
     // let gnbDepth3Arr = document.querySelectorAll(".gnb-depth3.on");
-
     // for (var i = 0; i < gnbDepth3Arr.length; i++) {
     //     gnbDepth3Arr[i].classList.remove("on");
     // }
-
     // gnbDepth3Arr.forEach((element) => {
     //     element.classList.remove("on");
     // });
