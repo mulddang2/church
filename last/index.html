@@ -1,881 +1,823 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>분당우리교회</title>
-        <!--Custom CSS -->
-        <link rel="stylesheet" href="default.css" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="./responsive/___mini-pc.css" />
-        <link rel="stylesheet" href="./responsive/__tablet.css" />
-        <link rel="stylesheet" href="./responsive/_mobile.css" />
-        <!-- Slick CSS -->
-        <link rel="stylesheet" href="slick.css" />
-        <link rel="stylesheet" href="slick-theme.css" />
-    </head>
-    <body>
-        <div id="wrap">
-            <header>
-                <div class="header-wrap">
-                    <div class="header-top">
-                        <div class="content-inner">
-                            <h1>
-                                <a href="#">
-                                    <img
-                                        src="./images/logo/logo.png"
-                                        alt="분당우리교회"
-                                    />
-                                </a>
-                            </h1>
-                            <ul class="utility">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>분당우리교회</title>
+    <!--Custom CSS -->
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive/___mini-pc.css">
+    <link rel="stylesheet" href="./responsive/__tablet.css">
+    <link rel="stylesheet" href="./responsive/_mobile.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header-wrap">
+                <div class="header-top">
+                    <div class="content-inner">
+                        <h1>
+                            <a href="#">
+                                <img src="./images/logo/logo.png" alt="분당우리교회">
+                            </a>
+                        </h1>
+                        <ul class="utility">
+                            <li>
+                                <a href="#">로그인</a>
+                            </li>
+                            <li>
+                                <a href="#">회원가입</a>
+                            </li>
+                            <li class="search-bar">
+                                <label for="search">검색어</label>
+                                <input type="text" id="search" placeholder="검색" autocomplete="off">
+                                <button type="button">
+                                    <img src="./images/magnifer.svg" alt="검색하기">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- header-top -->
+                <div class="header-bottom">
+                    <div class="content-inner">
+                        <div class="gnb-wrap">
+                            <ul class="gnb-depth1">
                                 <li>
-                                    <a href="#">로그인</a>
+                                    <a href="#">
+                                        <span>교회소개</span>
+                                    </a>
+                                    <ul class="gnb-depth2">
+                                        <li>
+                                            <a href="#">4대 비전 소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">담임목사 소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">담임목사 저서</a>
+                                        </li>
+                                        <li class="has-depth">
+                                            <a href="#"> 섬기는 이들 </a>
+                                            <ul class="gnb-depth3">
+                                                <li>
+                                                    <a href="#">교역자</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">장로</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">직원</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">예배안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">새가족 안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">헌금안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">사무행정</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">오시는 길</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <a href="#">회원가입</a>
+                                    <a href="#">
+                                        <span>목양과 훈련</span>
+                                    </a>
+                                    <ul class="gnb-depth2">
+                                        <li>
+                                            <a href="#">교구소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">훈련ㆍ전도</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">QTㆍ가정예배</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">성경통독자료</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li class="search-bar">
-                                    <label for="search">검색어</label>
-                                    <input
-                                        type="text"
-                                        id="search"
-                                        placeholder="검색"
-                                        autocomplete="off"
-                                    />
-                                    <button type="button">
-                                        <img
-                                            src="./images/magnifer.svg"
-                                            alt="검색하기"
-                                        />
-                                    </button>
+                                <li>
+                                    <a href="#">
+                                        <span>선교와 나눔</span>
+                                    </a>
+                                    <ul class="gnb-depth2">
+                                        <li>
+                                            <a href="#">이웃사랑</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">선교사역</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>다음세대와 청년</span>
+                                    </a>
+                                    <ul class="gnb-depth2">
+                                        <li>
+                                            <a href="#">주일학교</a>
+                                        </li>
+                                        <li class="has-depth">
+                                            <a href="#"> 대학ㆍ청년교구 </a>
+                                            <ul class="gnb-depth3">
+                                                <li>
+                                                    <a href="#">대청교구는</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">사역소식</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">대학부</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">1청년부</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">2청년부</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-depth">
+                                            <a href="#"> 대학ㆍ청년교구 </a>
+                                            <ul class="gnb-depth3">
+                                                <li>
+                                                    <a href="#">대청교구는</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">사역소식</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">대학부</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">1청년부</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">2청년부</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-depth">
+                                            <a href="#"> 대학ㆍ청년교구 </a>
+                                            <ul class="gnb-depth3">
+                                                <li>
+                                                    <a href="#">대청교구는</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">사역소식</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">대학부</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">1청년부</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">2청년부</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-depth">
+                                            <a href="#"> 대학ㆍ청년교구 </a>
+                                            <ul class="gnb-depth3">
+                                                <li>
+                                                    <a href="#">대청교구는</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">사역소식</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">대학부</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">1청년부</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">2청년부</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-depth">
+                                            <a href="#"> 대학ㆍ청년교구 </a>
+                                            <ul class="gnb-depth3">
+                                                <li>
+                                                    <a href="#">대청교구는</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">사역소식</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">대학부</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">1청년부</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">2청년부</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>우리 복지재단</span>
+                                    </a>
+                                    <ul class="gnb-depth2">
+                                        <li class="has-depth">
+                                            <a href="#">우리주간보호센터</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">우리꿈터</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>커뮤니티</span>
+                                    </a>
+                                    <ul class="gnb-depth2">
+                                        <li>
+                                            <a href="#">우리나눔터</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">우리스토리</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
+                            <div class="gnb-line"></div>
                         </div>
                     </div>
-                    <!-- header-top -->
-                    <div class="header-bottom">
-                        <div class="content-inner">
-                            <div class="gnb-wrap">
-                                <ul class="gnb-depth1">
-                                    <li>
-                                        <a href="#">
-                                            <span>교회소개</span>
-                                        </a>
-                                        <ul class="gnb-depth2">
-                                            <li>
-                                                <a href="#">4대 비전 소개</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">담임목사 소개</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">담임목사 저서</a>
-                                            </li>
-                                            <li class="has-depth">
-                                                <a href="#"> 섬기는 이들 </a>
-                                                <ul class="gnb-depth3">
-                                                    <li>
-                                                        <a href="#">교역자</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">장로</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">직원</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">예배안내</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">새가족 안내</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">헌금안내</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">사무행정</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">오시는 길</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span>목양과 훈련</span>
-                                        </a>
-                                        <ul class="gnb-depth2">
-                                            <li>
-                                                <a href="#">교구소개</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">훈련ㆍ전도</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">QTㆍ가정예배</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">성경통독자료</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span>선교와 나눔</span>
-                                        </a>
-                                        <ul class="gnb-depth2">
-                                            <li>
-                                                <a href="#">이웃사랑</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">선교사역</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span>다음세대와 청년</span>
-                                        </a>
-                                        <ul class="gnb-depth2">
-                                            <li>
-                                                <a href="#">주일학교</a>
-                                            </li>
-                                            <li class="has-depth">
-                                                <a href="#">
-                                                    대학ㆍ청년교구
-                                                </a>
-                                                <ul class="gnb-depth3">
-                                                    <li>
-                                                        <a href="#"
-                                                            >대청교구는</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">사역소식</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">대학부</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">1청년부</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">2청년부</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-depth">
-                                                <a href="#"> 대학ㆍ청년교구 </a>
-                                                <ul class="gnb-depth3">
-                                                    <li>
-                                                        <a href="#"
-                                                            >대청교구는</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">사역소식</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">대학부</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">1청년부</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">2청년부</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-depth">
-                                                <a href="#"> 대학ㆍ청년교구 </a>
-                                                <ul class="gnb-depth3">
-                                                    <li>
-                                                        <a href="#"
-                                                            >대청교구는</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">사역소식</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">대학부</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">1청년부</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">2청년부</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-depth">
-                                                <a href="#"> 대학ㆍ청년교구 </a>
-                                                <ul class="gnb-depth3">
-                                                    <li>
-                                                        <a href="#"
-                                                            >대청교구는</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">사역소식</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">대학부</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">1청년부</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">2청년부</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-depth">
-                                                <a href="#"> 대학ㆍ청년교구 </a>
-                                                <ul class="gnb-depth3">
-                                                    <li>
-                                                        <a href="#"
-                                                            >대청교구는</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">사역소식</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">대학부</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">1청년부</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">2청년부</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span>우리 복지재단</span>
-                                        </a>
-                                        <ul class="gnb-depth2">
-                                            <li class="has-depth">
-                                                <a href="#">우리주간보호센터</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">우리꿈터</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span>커뮤니티</span>
-                                        </a>
-                                        <ul class="gnb-depth2">
-                                            <li>
-                                                <a href="#">우리나눔터</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">우리스토리</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <div class="gnb-line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- header-bottom-->
                 </div>
-            </header>
-            <!--//header-->
-            <div id="header_tab">
-                <div class="menu_wrap_tab">
-                    <div class="burger_tab">
-                        <a href="#">
-                            <img src="./images/icon/burger_tab_m.svg" alt="" />
-                        </a>
-                    </div>
-                    <h1>
-                        <a class="logo_m" href="#"></a>
-                    </h1>
-                    <div class="magnifer_tab">
-                        <a href="#">
-                            <img
-                                src="./images/icon/magnifer_tab_m.svg"
-                                alt=""
-                            />
-                        </a>
-                    </div>
-                </div>
+                <!-- header-bottom-->
             </div>
-
-            <div class="quick_menu">
-                <div class="quick_box">
+        </header>
+        <!--//header-->
+        <div id="header_tab">
+            <div class="menu_wrap_tab">
+                <div class="burger_tab">
                     <a href="#">
-                        <div class="quick01">
-                            <img src="./images/icon/youtube.png" alt="" />
-                            <span>예배실황</span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="quick02">
-                            <img src="./images/icon/news.png" alt="" />
-                            <span>주보</span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="quick03">
-                            <img src="./images/icon/clock.png" alt="" />
-                            <span>예배안내</span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="quick04">
-                            <img src="./images/icon/offering.png" alt="" />
-                            <span>온라인 헌금</span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="quick05">
-                            <img src="./images/icon/location.png" alt="" />
-                            <span>오시는길</span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="quick06">
-                            <img src="./images/icon/heart.png" alt="" />
-                            <span>새가족 안내</span>
-                        </div>
+                        <img src="./images/icon/burger_tab_m.svg" alt="">
                     </a>
                 </div>
-                <div class="move_top_btn">
-                    <a class="move_top">
-                        <img src="./images/icon/btn_top.svg" alt="" />
+                <h1>
+                    <a class="logo_m" href="#"></a>
+                </h1>
+                <div class="magnifer_tab">
+                    <a href="#">
+                        <img src="./images/icon/magnifer_tab_m.svg" alt="">
                     </a>
                 </div>
             </div>
+        </div>
 
-            <div id="main">
-                <div class="mainvisual">
-                    <div>
-                        <a href="#">
-                            <img src="./images/mainbg1.png" />
-                        </a>
+        <div class="quick_menu">
+            <div class="quick_box">
+                <a href="#">
+                    <div class="quick01">
+                        <img src="./images/icon/youtube.png" alt="">
+                        <span>예배실황</span>
                     </div>
-                    <div>
-                        <a href="#">
-                            <img src="./images/mainbg2.png" />
-                        </a>
+                </a>
+                <a href="#">
+                    <div class="quick02">
+                        <img src="./images/icon/news.png" alt="">
+                        <span>주보</span>
                     </div>
-                    <div>
-                        <a href="#">
-                            <img src="./images/mainbg.png" />
-                        </a>
+                </a>
+                <a href="#">
+                    <div class="quick03">
+                        <img src="./images/icon/clock.png" alt="">
+                        <span>예배안내</span>
                     </div>
-                    <div>
-                        <a href="#">
-                            <img src="./images/mainbg.png" />
+                </a>
+                <a href="#">
+                    <div class="quick04">
+                        <img src="./images/icon/offering.png" alt="">
+                        <span>온라인 헌금</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="quick05">
+                        <img src="./images/icon/location.png" alt="">
+                        <span>오시는길</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="quick06">
+                        <img src="./images/icon/heart.png" alt="">
+                        <span>새가족 안내</span>
+                    </div>
+                </a>
+            </div>
+            <div class="move_top_btn">
+                <a class="move_top">
+                    <img src="./images/icon/btn_top.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="mainvisual">
+                <div>
+                    <a href="#">
+                        <img src="./images/mainbg1.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/mainbg2.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/mainbg.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/mainbg.png">
+                    </a>
+                </div>
+            </div>
+            <ul>
+                <li class="pager"><a href="#"></a></li>
+                <li class="pager"><a href="#"></a></li>
+                <li class="pager pager_current"><a href="#"></a></li>
+            </ul>
+            <div class="mainvisual_tab">
+                <div>
+                    <a href="#">
+                        <img src="./images/mainvisual_tab_m.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/mainvisual_tab_m.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/mainvisual_tab_m.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./images/mainvisual_tab_m.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="content ct1">
+                <div class="inner ct1">
+                    <div class="inner_text">
+                        <div class="title_mini">
+                            <span>함께울고 함께웃는</span>
+                        </div>
+                        <div class="title_text first">
+                            <h2>분당우리교회</h2>
+                            <p class="title_desc">
+                                온 땅이 하나님을 아는 기쁨으로 가득할때까지
+                                예배의 기쁨을 향한 우리의 열정을 회복시켜
+                                복음적인 가정 부흥과 사회 참여의 패러다임을
+                                선도하기 원합니다.
+                            </p>
+                        </div>
+                        <ul>
+                            <li><b>예배의 감격이 있는</b> 교회</li>
+                            <li><b>가정을 회복시키는</b> 교회</li>
+                            <li><b>젊은이를 깨우는</b> 교회</li>
+                            <li><b>세상을 변화시키는</b> 교회</li>
+                        </ul>
+                    </div>
+                    <div class="ct1_img"></div>
+                </div>
+            </div>
+            <!--//ct1-->
+            <div class="content ct2">
+                <!--센터 타이틀 + 버튼 -->
+                <div class="title_inner">
+                    <div class="title_center">
+                        <div class="title_center_text">
+                            <span>분당우리교회</span>
+                            <h2>설교 영상</h2>
+                        </div>
+                        <div class="move_btn">
+                            <!-- ----- 클래스명 추가 ct2_ ----- -->
+                            <a href="#" class="video_prev ct_prev prev"></a>
+                            <a href="#" class="video_next ct_next next"></a>
+                        </div>
+                        <a href="#" class="all">
+                            <span>전체보기</span>
                         </a>
                     </div>
                 </div>
-                <ul>
-                    <li class="pager"><a href="#"></a></li>
-                    <li class="pager"><a href="#"></a></li>
-                    <li class="pager pager_current"><a href="#"></a></li>
-                </ul>
-                <div class="mainvisual_tab">
-                    <div>
-                        <a href="#">
-                            <img src="./images/mainvisual_tab_m.jpg" alt="" />
+                <div class="video_all">
+                    <div class="video_th1 video_th">
+                        <a href="https://www.youtube.com/watch?v=K2NmoNYU1q4&list=PLn3gC0zxOsmyrtTEHNlYxos1Onae6DRWF&index=19"
+                            target="_blank">
+                            <img src="./images/video_1.png" alt="">
                         </a>
                     </div>
-                    <div>
-                        <a href="#">
-                            <img src="./images/mainvisual_tab_m.jpg" alt="" />
+                    <div class="video_th2 video_th">
+                        <a href="https://www.youtube.com/watch?v=sVxbnb_9l4A&list=PLn3gC0zxOsmzIvC9JKPGiZKfy_V9j4X_a&index=4"
+                            target="_blank">
+                            <img src="./images/video_2.png" alt="">
                         </a>
                     </div>
-                    <div>
-                        <a href="#">
-                            <img src="./images/mainvisual_tab_m.jpg" alt="" />
+                    <div class="video_th3 video_th">
+                        <a href="https://www.youtube.com/watch?v=EtX-ZcM4h1Y&list=PLn3gC0zxOsmwrme5FuzqiY1FMpw6pGtiD&index=9"
+                            target="_blank">
+                            <img src="./images/video_3.png" alt="">
                         </a>
                     </div>
-                    <div>
-                        <a href="#">
-                            <img src="./images/mainvisual_tab_m.jpg" alt="" />
+                    <div class="video_th4 video_th">
+                        <a href="https://www.youtube.com/watch?v=LB81MsKqiCw&list=PLn3gC0zxOsmzaoRGoRSSKBLoMH4n0IK-z&index=4"
+                            target="_blank">
+                            <img src="./images/video_4.png" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="content ct1">
-                    <div class="inner ct1">
-                        <div class="inner_text">
-                            <div class="title_mini">
-                                <span>함께울고 함께웃는</span>
-                            </div>
-                            <div class="title_text first">
-                                <h2>분당우리교회</h2>
-                                <p class="title_desc">
-                                    온 땅이 하나님을 아는 기쁨으로 가득할때까지
-                                    예배의 기쁨을 향한 우리의 열정을 회복시켜
-                                    복음적인 가정 부흥과 사회 참여의 패러다임을
-                                    선도하기 원합니다.
-                                </p>
-                            </div>
-                            <ul>
-                                <li><b>예배의 감격이 있는</b> 교회</li>
-                                <li><b>가정을 회복시키는</b> 교회</li>
-                                <li><b>젊은이를 깨우는</b> 교회</li>
-                                <li><b>세상을 변화시키는</b> 교회</li>
-                            </ul>
+                <a href="#" class="all_tab_m">
+                    <span>전체보기</span>
+                </a>
+            </div>
+            <!--//ct2-->
+            <div class="content ct3">
+                <div class="title_inner">
+                    <div class="title_center">
+                        <div class="title_center_text">
+                            <span>분당우리교회</span>
+                            <h2>우리 소식</h2>
                         </div>
-                        <div class="ct1_img"></div>
+                        <div class="move_btn">
+                            <!-- ----- 클래스명 추가 ct2_ ----- -->
+                            <a href="#" class="news_prev ct_prev prev"></a>
+                            <a href="#" class="news_next ct_next next"></a>
+                        </div>
+                        <a href="#" class="all">
+                            <span>전체보기</span>
+                        </a>
                     </div>
                 </div>
-                <!--//ct1-->
-                <div class="content ct2">
-                    <!--센터 타이틀 + 버튼 -->
-                    <div class="title_inner">
-                        <div class="title_center">
-                            <div class="title_center_text">
-                                <span>분당우리교회</span>
-                                <h2>설교 영상</h2>
-                            </div>
-                            <div class="move_btn">
-                                <!-- ----- 클래스명 추가 ct2_ ----- -->
-                                <a href="#" class="video_prev ct_prev prev"></a>
-                                <a href="#" class="video_next ct_next next"></a>
-                            </div>
-                            <a href="#" class="all">
-                                <span>전체보기</span>
+                <div class="inner">
+                    <ul class="news">
+                        <li>
+                            <a href="#">
+                                <div class="new">NEW</div>
+                                <div class="ct3_text">
+                                    <p class="news_title">
+                                        2022년 서리집사 임명
+                                    </p>
+                                    <p class="news_date">2021-12-31</p>
+                                </div>
+                                <div class="bottom_line"></div>
                             </a>
-                        </div>
-                    </div>
-                    <div class="video_all">
-                        <div class="video_th1 video_th">
-                            <a
-                                href="https://www.youtube.com/watch?v=K2NmoNYU1q4&list=PLn3gC0zxOsmyrtTEHNlYxos1Onae6DRWF&index=19"
-                                target="_blank"
-                            >
-                                <img src="./images/video_1.png" alt="" />
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="ct3_text">
+                                    <p class="news_title">
+                                        12월 큐티공개강좌 강의안
+                                    </p>
+                                    <p class="news_date">2021-12-18</p>
+                                </div>
+                                <div class="bottom_line"></div>
                             </a>
-                        </div>
-                        <div class="video_th2 video_th">
-                            <a
-                                href="https://www.youtube.com/watch?v=sVxbnb_9l4A&list=PLn3gC0zxOsmzIvC9JKPGiZKfy_V9j4X_a&index=4"
-                                target="_blank"
-                            >
-                                <img src="./images/video_2.png" alt="" />
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="ct3_text">
+                                    <p class="news_title">
+                                        2022년 그리스도 중심 성경읽기 안내
+                                    </p>
+                                    <p class="news_date">2021-12-10</p>
+                                </div>
+                                <div class="bottom_line"></div>
                             </a>
-                        </div>
-                        <div class="video_th3 video_th">
-                            <a
-                                href="https://www.youtube.com/watch?v=EtX-ZcM4h1Y&list=PLn3gC0zxOsmwrme5FuzqiY1FMpw6pGtiD&index=9"
-                                target="_blank"
-                            >
-                                <img src="./images/video_3.png" alt="" />
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="new">NEW</div>
+                                <div class="ct3_text">
+                                    <p class="news_title">
+                                        2022년 서리집사 임명
+                                    </p>
+                                    <p class="news_date">2021-12-31</p>
+                                </div>
+                                <div class="bottom_line"></div>
                             </a>
-                        </div>
-                        <div class="video_th4 video_th">
-                            <a
-                                href="https://www.youtube.com/watch?v=LB81MsKqiCw&list=PLn3gC0zxOsmzaoRGoRSSKBLoMH4n0IK-z&index=4"
-                                target="_blank"
-                            >
-                                <img src="./images/video_4.png" alt="" />
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="ct3_text">
+                                    <p class="news_title">
+                                        12월 큐티공개강좌 강의안
+                                    </p>
+                                    <p class="news_date">2021-12-18</p>
+                                </div>
+                                <div class="bottom_line"></div>
                             </a>
-                        </div>
-                    </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="ct3_text">
+                                    <p class="news_title">
+                                        2022년 그리스도 중심 성경읽기 안내
+                                    </p>
+                                    <p class="news_date">2021-12-10</p>
+                                </div>
+                                <div class="bottom_line"></div>
+                            </a>
+                        </li>
+                    </ul>
                     <a href="#" class="all_tab_m">
                         <span>전체보기</span>
                     </a>
                 </div>
-                <!--//ct2-->
-                <div class="content ct3">
-                    <div class="title_inner">
-                        <div class="title_center">
-                            <div class="title_center_text">
-                                <span>분당우리교회</span>
-                                <h2>우리 소식</h2>
-                            </div>
-                            <div class="move_btn">
-                                <!-- ----- 클래스명 추가 ct2_ ----- -->
-                                <a href="#" class="news_prev ct_prev prev"></a>
-                                <a href="#" class="news_next ct_next next"></a>
-                            </div>
-                            <a href="#" class="all">
-                                <span>전체보기</span>
-                            </a>
+            </div>
+            <div class="content ct4">
+                <div class="title_inner">
+                    <div class="title_center">
+                        <div class="title_center_text">
+                            <span>분당우리교회</span>
+                            <h2>우리 갤러리</h2>
                         </div>
+                        <div class="move_btn">
+                            <a href="#" class="gallery_prev ct_prev prev"></a>
+                            <a href="#" class="gallery_next ct_next next"></a>
+                        </div>
+                        <a href="#" class="all">
+                            <span>전체보기</span>
+                        </a>
                     </div>
-                    <div class="inner">
-                        <ul class="news">
-                            <li>
-                                <a href="#">
-                                    <div class="new">NEW</div>
-                                    <div class="ct3_text">
-                                        <p class="news_title">
-                                            2022년 서리집사 임명
-                                        </p>
-                                        <p class="news_date">2021-12-31</p>
-                                    </div>
-                                    <div class="bottom_line"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="ct3_text">
-                                        <p class="news_title">
-                                            12월 큐티공개강좌 강의안
-                                        </p>
-                                        <p class="news_date">2021-12-18</p>
-                                    </div>
-                                    <div class="bottom_line"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="ct3_text">
-                                        <p class="news_title">
-                                            2022년 그리스도 중심 성경읽기 안내
-                                        </p>
-                                        <p class="news_date">2021-12-10</p>
-                                    </div>
-                                    <div class="bottom_line"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="new">NEW</div>
-                                    <div class="ct3_text">
-                                        <p class="news_title">
-                                            2022년 서리집사 임명
-                                        </p>
-                                        <p class="news_date">2021-12-31</p>
-                                    </div>
-                                    <div class="bottom_line"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="ct3_text">
-                                        <p class="news_title">
-                                            12월 큐티공개강좌 강의안
-                                        </p>
-                                        <p class="news_date">2021-12-18</p>
-                                    </div>
-                                    <div class="bottom_line"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="ct3_text">
-                                        <p class="news_title">
-                                            2022년 그리스도 중심 성경읽기 안내
-                                        </p>
-                                        <p class="news_date">2021-12-10</p>
-                                    </div>
-                                    <div class="bottom_line"></div>
-                                </a>
-                            </li>
-                        </ul>
+                </div>
+                <div class="gallery_all">
+                    <div class="gallery_box">
+                        <a href="#">
+                            <img src="./images/woorigallery/wg1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery_box">
+                        <a href="#">
+                            <img src="./images/woorigallery/wg2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery_box">
+                        <a href="#">
+                            <img src="./images/woorigallery/wg3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery_box">
+                        <a href="#">
+                            <img src="./images/woorigallery/wg4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery_box">
+                        <a href="#">
+                            <img src="./images/woorigallery/wg5.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery_box">
+                        <a href="#">
+                            <img src="./images/woorigallery/wg6.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="all_tab_m">
+                    <span>전체보기</span>
+                </a>
+            </div>
+            <div class="content ct5">
+                <div class="title_inner">
+                    <div class="title_center">
+                        <div class="title_center_text">
+                            <span>분당우리교회</span>
+                            <h2>우리 게시판</h2>
+                        </div>
+                        <a href="#" class="all">
+                            <span>전체보기</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="board">
+                        <div class="board_box1">
+                            <a href="#">
+                                <div class="board_left">
+                                    <p class="board_index">
+                                        [분당우리게시판]
+                                    </p>
+                                    <p class="board_title">
+                                        이사야7장8절 부르심에 대한
+                                        기도입니다이사야7장8절 부르심에 대한
+                                        기도입니다이사야7장8절 부르심에 대한
+                                        기도입니다이사야7장8절 부르심에 대한
+                                        기도입니다이사야7장8절 부르심에 대한
+                                        기도입니다
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="board_right">
+                                <p class="board_writer">안지인</p>
+                                <span class="middle_line"></span>
+                                <p class="board_date">2022-07-04</p>
+                            </div>
+                        </div>
+                        <div class="board_boxs">
+                            <a href="#">
+                                <div class="board_left">
+                                    <p class="board_index">
+                                        [분당우리게시판]
+                                    </p>
+                                    <p class="board_title">
+                                        7월 4일 (월) 히브리서 3:7-8, 12-14
+                                        이사야 1-6 부르심에 반응하는 이사야
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="board_right">
+                                <p class="board_writer">조요한</p>
+                                <span class="middle_line"></span>
+                                <p class="board_date">2022-07-04</p>
+                            </div>
+                        </div>
+                        <div class="board_boxs">
+                            <a href="#">
+                                <div class="board_left">
+                                    <p class="board_index">
+                                        [분당우리게시판]
+                                    </p>
+                                    <p class="board_title">
+                                        7월 3일 (주일) 감사한 책이 쌓입니다.
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="board_right">
+                                <p class="board_writer">이수지</p>
+                                <span class="middle_line"></span>
+                                <p class="board_date">2022-07-04</p>
+                            </div>
+                        </div>
+                        <div class="board_boxs">
+                            <a href="#">
+                                <div class="board_left">
+                                    <p class="board_index">
+                                        [분당우리게시판]
+                                    </p>
+                                    <p class="board_title">
+                                        아르바이트 하실 청년분 구합니다.
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="board_right">
+                                <p class="board_writer">김하영</p>
+                                <span class="middle_line"></span>
+                                <p class="board_date">2022-07-04</p>
+                            </div>
+                        </div>
+                        <div class="board_boxs">
+                            <a href="#">
+                                <div class="board_left">
+                                    <p class="board_index">[기도요청]</p>
+                                    <p class="board_title">중학교입학</p>
+                                </div>
+                            </a>
+                            <div class="board_right">
+                                <p class="board_writer">이은혜</p>
+                                <span class="middle_line"></span>
+                                <p class="board_date">2022-07-04</p>
+                            </div>
+                        </div>
+                        <div class="board_boxs">
+                            <a href="#">
+                                <div class="board_left">
+                                    <p class="board_index">
+                                        [공지 행사 안내]
+                                    </p>
+                                    <p class="board_title">
+                                        새가족 등록 안내드립니다.
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="board_right">
+                                <p class="board_writer">바울</p>
+                                <span class="middle_line"></span>
+                                <p class="board_date">2022-07-04</p>
+                            </div>
+                        </div>
+                        <div class="board_boxs">
+                            <a href="#">
+                                <div class="board_left">
+                                    <p class="board_index">
+                                        [분당우리게시판]
+                                    </p>
+                                    <p class="board_title">
+                                        7월 2일 (토) 아가서 1:13-14 아름다운
+                                        사랑 노래
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="board_right">
+                                <p class="board_writer">김노아</p>
+                                <span class="middle_line"></span>
+                                <p class="board_date">2022-07-04</p>
+                            </div>
+                        </div>
+                        <div class="board_boxs">
+                            <a href="#">
+                                <div class="board_left">
+                                    <p class="board_index">
+                                        [분당우리게시판]
+                                    </p>
+                                    <p class="board_title">
+                                        아가 아름다운 노래
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="board_right">
+                                <p class="board_writer">이요셉</p>
+                                <span class="middle_line"></span>
+                                <p class="board_date">2022-07-04</p>
+                            </div>
+                        </div>
                         <a href="#" class="all_tab_m">
                             <span>전체보기</span>
                         </a>
                     </div>
                 </div>
-                <div class="content ct4">
-                    <div class="title_inner">
-                        <div class="title_center">
-                            <div class="title_center_text">
-                                <span>분당우리교회</span>
-                                <h2>우리 갤러리</h2>
-                            </div>
-                            <div class="move_btn">
-                                <a
-                                    href="#"
-                                    class="gallery_prev ct_prev prev"
-                                ></a>
-                                <a
-                                    href="#"
-                                    class="gallery_next ct_next next"
-                                ></a>
-                            </div>
-                            <a href="#" class="all">
-                                <span>전체보기</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery_all">
-                        <div class="gallery_box">
-                            <a href="#">
-                                <img
-                                    src="./images/woorigallery/wg1.png"
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="gallery_box">
-                            <a href="#">
-                                <img
-                                    src="./images/woorigallery/wg2.png"
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="gallery_box">
-                            <a href="#">
-                                <img
-                                    src="./images/woorigallery/wg3.png"
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="gallery_box">
-                            <a href="#">
-                                <img
-                                    src="./images/woorigallery/wg4.png"
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="gallery_box">
-                            <a href="#">
-                                <img
-                                    src="./images/woorigallery/wg5.png"
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                        <div class="gallery_box">
-                            <a href="#">
-                                <img
-                                    src="./images/woorigallery/wg6.png"
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    <a href="#" class="all_tab_m">
-                        <span>전체보기</span>
-                    </a>
-                </div>
-                <div class="content ct5">
-                    <div class="title_inner">
-                        <div class="title_center">
-                            <div class="title_center_text">
-                                <span>분당우리교회</span>
-                                <h2>우리 게시판</h2>
-                            </div>
-                            <a href="#" class="all">
-                                <span>전체보기</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="inner">
-                        <div class="board">
-                            <div class="board_box1">
-                                <a href="#">
-                                    <div class="board_left">
-                                        <p class="board_index">
-                                            [분당우리게시판]
-                                        </p>
-                                        <p class="board_title">
-                                            이사야7장8절 부르심에 대한
-                                            기도입니다이사야7장8절 부르심에 대한
-                                            기도입니다이사야7장8절 부르심에 대한
-                                            기도입니다이사야7장8절 부르심에 대한
-                                            기도입니다이사야7장8절 부르심에 대한
-                                            기도입니다
-                                        </p>
-                                    </div>
-                                </a>
-                                <div class="board_right">
-                                    <p class="board_writer">안지인</p>
-                                    <span class="middle_line"></span>
-                                    <p class="board_date">2022-07-04</p>
-                                </div>
-                            </div>
-                            <div class="board_boxs">
-                                <a href="#">
-                                    <div class="board_left">
-                                        <p class="board_index">
-                                            [분당우리게시판]
-                                        </p>
-                                        <p class="board_title">
-                                            7월 4일 (월) 히브리서 3:7-8, 12-14
-                                            이사야 1-6 부르심에 반응하는 이사야
-                                        </p>
-                                    </div>
-                                </a>
-                                <div class="board_right">
-                                    <p class="board_writer">조요한</p>
-                                    <span class="middle_line"></span>
-                                    <p class="board_date">2022-07-04</p>
-                                </div>
-                            </div>
-                            <div class="board_boxs">
-                                <a href="#">
-                                    <div class="board_left">
-                                        <p class="board_index">
-                                            [분당우리게시판]
-                                        </p>
-                                        <p class="board_title">
-                                            7월 3일 (주일) 감사한 책이 쌓입니다.
-                                        </p>
-                                    </div>
-                                </a>
-                                <div class="board_right">
-                                    <p class="board_writer">이수지</p>
-                                    <span class="middle_line"></span>
-                                    <p class="board_date">2022-07-04</p>
-                                </div>
-                            </div>
-                            <div class="board_boxs">
-                                <a href="#">
-                                    <div class="board_left">
-                                        <p class="board_index">
-                                            [분당우리게시판]
-                                        </p>
-                                        <p class="board_title">
-                                            아르바이트 하실 청년분 구합니다.
-                                        </p>
-                                    </div>
-                                </a>
-                                <div class="board_right">
-                                    <p class="board_writer">김하영</p>
-                                    <span class="middle_line"></span>
-                                    <p class="board_date">2022-07-04</p>
-                                </div>
-                            </div>
-                            <div class="board_boxs">
-                                <a href="#">
-                                    <div class="board_left">
-                                        <p class="board_index">[기도요청]</p>
-                                        <p class="board_title">중학교입학</p>
-                                    </div>
-                                </a>
-                                <div class="board_right">
-                                    <p class="board_writer">이은혜</p>
-                                    <span class="middle_line"></span>
-                                    <p class="board_date">2022-07-04</p>
-                                </div>
-                            </div>
-                            <div class="board_boxs">
-                                <a href="#">
-                                    <div class="board_left">
-                                        <p class="board_index">
-                                            [공지 행사 안내]
-                                        </p>
-                                        <p class="board_title">
-                                            새가족 등록 안내드립니다.
-                                        </p>
-                                    </div>
-                                </a>
-                                <div class="board_right">
-                                    <p class="board_writer">바울</p>
-                                    <span class="middle_line"></span>
-                                    <p class="board_date">2022-07-04</p>
-                                </div>
-                            </div>
-                            <div class="board_boxs">
-                                <a href="#">
-                                    <div class="board_left">
-                                        <p class="board_index">
-                                            [분당우리게시판]
-                                        </p>
-                                        <p class="board_title">
-                                            7월 2일 (토) 아가서 1:13-14 아름다운
-                                            사랑 노래
-                                        </p>
-                                    </div>
-                                </a>
-                                <div class="board_right">
-                                    <p class="board_writer">김노아</p>
-                                    <span class="middle_line"></span>
-                                    <p class="board_date">2022-07-04</p>
-                                </div>
-                            </div>
-                            <div class="board_boxs">
-                                <a href="#">
-                                    <div class="board_left">
-                                        <p class="board_index">
-                                            [분당우리게시판]
-                                        </p>
-                                        <p class="board_title">
-                                            아가 아름다운 노래
-                                        </p>
-                                    </div>
-                                </a>
-                                <div class="board_right">
-                                    <p class="board_writer">이요셉</p>
-                                    <span class="middle_line"></span>
-                                    <p class="board_date">2022-07-04</p>
-                                </div>
-                            </div>
-                            <a href="#" class="all_tab_m">
-                                <span>전체보기</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--//ct5-->
             </div>
-            <!--//main-->
-            <div id="footer">
-                <div class="footer_nav">
-                    <div class="footer_inner">
-                        <ul>
-                            <li><a href="#">송림고등학교</a></li>
-                            <li><a href="#">이전게시판</a></li>
-                            <li><a href="#">미디어제작선교회</a></li>
-                            <li><a href="#">결혼예식알림란</a></li>
-                            <li><a href="#">봉사신청</a></li>
-                            <li><a href="#">홈페이지문의 </a></li>
-                            <li><a href="#">각기관담당연락처</a></li>
-                            <li><a href="#">스마트폰이용안내</a></li>
-                        </ul>
-                    </div>
+            <!--//ct5-->
+        </div>
+        <!--//main-->
+        <div id="footer">
+            <div class="footer_nav">
+                <div class="footer_inner">
+                    <ul>
+                        <li><a href="#">송림고등학교</a></li>
+                        <li><a href="#">이전게시판</a></li>
+                        <li><a href="#">미디어제작선교회</a></li>
+                        <li><a href="#">결혼예식알림란</a></li>
+                        <li><a href="#">봉사신청</a></li>
+                        <li><a href="#">홈페이지문의 </a></li>
+                        <li><a href="#">각기관담당연락처</a></li>
+                        <li><a href="#">스마트폰이용안내</a></li>
+                    </ul>
                 </div>
-                <div class="footer_main">
-                    <div class="footer_inner">
-                        <div class="footer_content">
-                            <h1 class="logo_w">
-                                <a href="#"></a>
-                            </h1>
-                            <div class="menu">
-                                <a href="#">개인정보 취급방침</a>
-                                <span></span>
-                                <a href="#">이용안내</a>
-                                <span></span>
-                                <a href="#">오시는 길</a>
-                            </div>
+            </div>
+            <div class="footer_main">
+                <div class="footer_inner">
+                    <div class="footer_content">
+                        <h1 class="logo_w">
+                            <a href="#"></a>
+                        </h1>
+                        <div class="menu">
+                            <a href="#">개인정보 취급방침</a>
+                            <span></span>
+                            <a href="#">이용안내</a>
+                            <span></span>
+                            <a href="#">오시는 길</a>
                         </div>
-                        <p class="footer_address">
-                            본당: [13571] 경기도 성남시 분당구 이매로 100
-                            송림중고등학교 내 강당<br />
-                            드림센터 : [13590] 경기도 성남시 분당구 황새울로
-                            311번길9 분당우리교회 드림센터<br />
-                            대표전화 : 031-701-5750<br />
-                            팩스 : 031-701-5752<br />
-                        </p>
-                        <p class="copyright">
-                            Copyright 2002. WooriChurch. All rights reserved.
-                        </p>
                     </div>
+                    <p class="footer_address">
+                        본당: [13571] 경기도 성남시 분당구 이매로 100
+                        송림중고등학교 내 강당<br>
+                        드림센터 : [13590] 경기도 성남시 분당구 황새울로
+                        311번길9 분당우리교회 드림센터<br>
+                        대표전화 : 031-701-5750<br>
+                        팩스 : 031-701-5752<br>
+                    </p>
+                    <p class="copyright">
+                        Copyright 2002. WooriChurch. All rights reserved.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- jQuery CDN-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <!-- Slick.js CDN-->
-        <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-        ></script>
-        <!-- Custom JS -->
-        <script src="script.js"></script>
-    </body>
+    </div>
+    <!-- jQuery CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Slick.js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
 </html>
