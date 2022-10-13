@@ -50,7 +50,7 @@ html {
 
 /* 메인 레이아웃  */
 .content:nth-of-type(2n) {
-    background-color: #f6edd9;
+    background-color: var(--light-yellow);
 
 }
 

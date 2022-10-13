@@ -134,6 +134,7 @@ h1 img {
     line-height: 16px;
     outline: none;
     transition-duration: 0.2s;
+    font-family: "Noto Sans KR", sans-serif;
 }
 .search-bar input:focus {
     width: 242px;
@@ -159,7 +160,7 @@ h1 img {
     z-index: 2;
     height: auto;
 }
-.gnb-depth1 li:hover > a {
+.gnb-depth1 > li:hover > a {
     color: var(--light-green);
 }
 .gnb-depth1 > li > a {
@@ -208,8 +209,8 @@ h1 img {
 }
 .gnb-depth2 > li > a:hover,
 .gnb-depth3 > li > a:hover {
-    color: #92c159e4;
-    font-weight: bold;
+    color: var(--light-green);
+    font-weight: 500;
 }
 .gnb-depth3.active {
     display: block;
@@ -239,9 +240,6 @@ h1 img {
     transition: transform 0.25s ease-out;
     background-color: var(--point-green);
     z-index: 4;
-}
-.has-depth b {
-    font-weight: 400;
 }
 /* vertical line */
 .has-depth > a::before {
