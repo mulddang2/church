@@ -37,7 +37,7 @@
     .mainvisual_tab img {
         width: 100%;
         /* height:  calc(100vh - 480px); */
-        height: 60vh;
+        /* height: 60vh; */
         object-fit: cover;
         object-position: left center;
     }
@@ -89,12 +89,11 @@
     }
     .title_desc {
         font-size: var(--enhance-t);
-        /* width: 19.23vw; */
+        width: 30.23vw;
     }
     .ct1 .inner_text ul li::before {
         content: "";
         width: 0.2vw;
-        height: 1.8vh;
         vertical-align: baseline;
         margin-right: 0.6vw
     }
@@ -105,9 +104,10 @@
         margin: 0.74vh 0 1.11vh;
     } */
     .ct1 .inner_text ul {
-        /* margin-left: 3.13vw; */
-        margin-top: 3.85vh;
+        width: 200px;
+        margin-top: 6.85vh;
         font-size: var(--enhance-t);
+        line-height: 3.69vh;
     }
 
     /* content 공통  */
@@ -148,12 +148,12 @@
     a.all_tab_m {
         display: block;
         width: 144px;
-        height: 4.1vh;
+        height: 6.1vh;
         border: 1px solid #ada197;
         color: #645656;
         margin: 6.15vh auto 0;
         text-align: center;
-        line-height: 4.1vh;
+        line-height: 6.1vh;
         font-size: var(--enhance-t);
     }
 
@@ -162,14 +162,14 @@
 
     a.ct_prev.prev:hover,
     a.ct_next.next:hover {
-        width: 42px;
-        height: 42px;
-        /* display: inline-block; */
+        width: 20px;
+        height: 20px;
     }
     a.ct_prev.prev,
     a.ct_next.next {
-        width: 42px;
-        height: 42px;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
         /* display: inline-block; */
         border: 1px solid #d9d9d9;
         position: absolute;
@@ -244,10 +244,10 @@
         margin: 0 auto;
     }
     .news_title {
+        width: 200px;
         font-size: var(--h3-t);
-        margin-top: 8.51vw;
-        /* margin-bottom: 8.75vw; */
-        white-space: normal;
+        /* margin-top: 8.51vw; */
+        white-space: no-wrap;
     }
     .news_date {
         font-size: var(--enhance-t);
@@ -333,7 +333,7 @@
         margin-bottom: 1.85vh;
         display: flex;
         align-items: flex-end;
-        padding-top: 20px;
+        padding-top: 30px;
     }
     #footer h1.logo_w {
         width: 169px;
@@ -347,8 +347,8 @@
     }
     .footer_address,
     .copyright {
-        font-size: var(--minimum-t);
-        line-height: 2.85vh;
+        font-size: 1.2rem;
+        line-height: 3.85vh;
     }
     .copyright {
         margin-top: 1.48vh;

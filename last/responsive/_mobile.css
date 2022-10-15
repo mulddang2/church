@@ -3,26 +3,27 @@
         width: 94.78%;
         display: inherit;
     }
+    #header_tab .menu_wrap_tab {
+        padding: 0 6%;
+    }
     .news li {
         width: calc(100% - 13px);
 
     }
     .ct1_img {
-        width: 53.93vw;
-        height: 46.56vh;
+        width: 61.93vw;
+        height: 38.56vh;
         margin: 0 auto;
-        margin-top: 4.39vh;
-    }
-    .ct1 {
-        padding-top: 0;
     }
     .ct1 .inner_text ul li::before {
         width: 0.5vw;
-        margin-right: 0.8vw;
+        height: 1.9vh;
+        margin-right: 1.8vw;
+        vertical-align: middle;
     }
     a.ct_prev.prev, a.ct_next.next {
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
     }
 
     
@@ -30,8 +31,16 @@
     
     
     /*모바일 폰트관련 */
+    .inner.ct1 {
+        display: block;
+    }
+    .ct1 {
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
     .ct1 > .inner {
         text-align: center;
+        padding-bottom: 0;
     }
     .ct1 ul li {
         text-align: left;
@@ -39,53 +48,64 @@
     .title_mini, .title_desc {
         margin: 0 auto;
     } 
-    .title_mini span {
-        font-size: var(--minimum-m);
+    .title_mini span, .title_center_text span {
+        font-size: 14px;
     }
     .title_text h2 {
         font-size: var(--h2-m);
     }
     .title_desc {
-        font-size: var(--enhance-m);
-        line-height: 1.8rem;
-        width: 61.72vw;
+        font-size: 16px;
+        line-height: 25px;
+        width: 62.72vw;
     }
     .ct1 .inner_text ul {
-        font-size: var(--enhance-m);
+        font-size: 15px;
         width: fit-content;
         margin: 3.85vh auto 0;
 
     }
-    .title_center_text span {
-        font-size: var(--minimum-m);
-    }
     div[class^="title"] h2 {
-        font-size: var(--h2-m);
+        font-size: 25px;
     }
     a.all_tab_m {
-        font-size: var(--enhance-m);
+        width: 110px;
         height: 35px;
         line-height: 35px;
+        font-size: 14px;
     }
     .new {
-        font-size: var(--minimum-m);
+        font-size: 1.2rem;
         width: fit-content;
     }
     .news_title {
-        font-size: var(--h3-m);
+        width: 250px;
+        font-size: 18px;
     }
     .news_date {
-        font-size: var(--enhance-m);
+        font-size: 15px;
     }
     .board div[class^=board_], 
     .board p[class^=board_] {
-        font-size: var(--enhance-m);
+        font-size: 15px;
+    }
+    .board_title {
+        width: 57.25vw;
     }
     #footer ul li a {
-        font-size: var(--enhance-m);
+        font-size: 15px;
+    }
+    .footer_content {
+        display: block;
+    }
+    .footer_content .menu {
+        margin: 20px 0;
     }
     .footer_address,
     .copyright {
-        font-size: var(--minimum-m);
+        font-size: 13px;
+    }
+    .footer_address {
+        margin-top: 60px;
     }
 }
