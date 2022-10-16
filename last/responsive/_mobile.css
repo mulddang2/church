@@ -1,9 +1,9 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.99px) {
     .inner {
         width: 94.78%;
         display: inherit;
     }
-    #header_tab .menu_wrap_tab {
+    #header_m .menu_wrap_m {
         padding: 0 6%;
     }
     .news li {
@@ -68,7 +68,7 @@
     div[class^="title"] h2 {
         font-size: 25px;
     }
-    a.all_tab_m {
+    a.all_m {
         width: 110px;
         height: 35px;
         line-height: 35px;

@@ -7,7 +7,7 @@ $(document).ready(function () {
         dotsClass: "slick-dots",
         arrows: false,
     });
-    $(".mainvisual_tab").slick({
+    $(".mainvisual_m").slick({
         slidesToShow: 1,
         infinite: true,
         autoplay: true,

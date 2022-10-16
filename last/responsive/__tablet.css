@@ -1,11 +1,14 @@
 /* 테블릿 */
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1270.99px) {
     /* --------- 태블릿 헤더---------- */
+    .dim {
+        display: block;
+    }
     #header,
     .quick_menu, .header-top {
         display: none;
     }
-    #header_tab {
+    #header_m {
         display: block;
     }
     .ct5 .inner {
@@ -31,10 +34,10 @@
     #main .mainvisual {
         display: none;
     }
-    #main .mainvisual_tab {
+    #main .mainvisual_m {
         display: block;
     }
-    .mainvisual_tab img {
+    .mainvisual_m img {
         width: 100%;
         /* height:  calc(100vh - 480px); */
         /* height: 60vh; */
@@ -52,7 +55,7 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    .mainvisual_tab .slick-dots li {
+    .mainvisual_m .slick-dots li {
         background-color: #fff;
         border-radius: 50%;
         margin: 0 auto;
@@ -60,13 +63,10 @@
         width: 1vw;
         height: 1vw;
     }
-    .mainvisual_tab .slick-dots li:not(:last-child) {
+    .mainvisual_m .slick-dots li:not(:last-child) {
         margin-right: 1vw;
     }
-    /* .mainvisual_tab .slick-dots li button {
-        width: 26.04vw;
-    } */
-    .mainvisual_tab > .slick-dots li.slick-active {
+    .mainvisual_m > .slick-dots li.slick-active {
         width: 4.96vw;
         height: 1vw;
         /* border: 0.05vw solid var(--light-green); */
@@ -145,7 +145,7 @@
     a.all {
         display: none;
     }
-    a.all_tab_m {
+    a.all_m {
         display: block;
         width: 144px;
         height: 6.1vh;

@@ -1,14 +1,24 @@
 /* pc에서 안보여야할 것 */
-#header_tab {
+.dim {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+#header_m {
     display: none;
 }
-#header_tab h1 {
+#header_m h1 {
     background: url("./images/logo.png") no-repeat center / contain;
     width: 210px;
     height: 42px;
     margin: 0 auto;
 }
-#header_tab .menu_wrap_tab {
+#header_m .menu_wrap_m {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -23,12 +33,12 @@
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-.burger_tab,
-.magnifer_tab {
+.burger_m,
+.magnifer_m {
     display: block;
 }
-.burger_tab img,
-.magnifer_tab img {
+.burger_m img,
+.magnifer_m img {
     width: 20px;
     height: 20px;
 }
@@ -252,6 +262,41 @@ h1 img {
     transform: rotate(90deg);
 }
 
+.burger_menu {
+    z-index: 110;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 40%;
+    background-color: #fff;
+}
+.burger_wrap {
+    border: 1px solid #000;
+    padding-top: 50px;
+}
+.btn_close {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+.signin_up_m {
+    display: flex;
+}
+.signin_m, .signup_m {
+    background-color: red;
+    width: 50%;
+    height: 8.92vh;
+    line-height: 8.92vh;
+    text-align: center;
+}
+.quick_m {
+    height: 383px;
+    width: 100%;
+    background-color: blue;
+}
+    
+
+
 /* 퀵메뉴  */
 .quick_menu {
     position: absolute;
@@ -315,7 +360,7 @@ h1 img {
     display: block;
     width: 100%;
 }
-#main .mainvisual_tab {
+#main .mainvisual_m {
     display: none;
 }
 #main .slick-dotted.slick-slider {
@@ -483,7 +528,7 @@ a.all {
 a.all:hover {
     color: var(--light-green);
 }
-a.all_tab_m {
+a.all_m {
     display: none;
 }
 
