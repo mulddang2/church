@@ -1,9 +1,6 @@
 /* 테블릿 */
 @media screen and (max-width: 1270.99px) {
     /* --------- 태블릿 헤더---------- */
-    .dim {
-        display: block;
-    }
     #header,
     .quick_menu, .header-top {
         display: none;

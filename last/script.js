@@ -161,7 +161,7 @@ for (let i = 0; i < hasDepthAs.length; i++) {
         for (let j = 0; j < hasDepths.length; j++) {
             hasDepths[j].classList.remove("active");
         }
-        
+
         if (hasActiveClass === false) {
             hasDepthsClassList.add("active");
         } else {
@@ -179,3 +179,55 @@ gnbDepth1.addEventListener("mouseenter", function () {
 gnbDepth1.addEventListener("mouseleave", function () {
     navbar.classList.remove('on');
 });
+
+/* Burger Menu (for tablet, mobile) */
+
+
+
+/* 버거버튼을 누르면, burger_menu가 block 된다 */
+$(document).ready(function () {
+    btnClose = $('.btn_close')
+
+    closeBurgerMenu = function(target) {
+        $(target).parents('.burger_menu').hide();
+        $('.dim').hide();
+
+        $('html').css('overflow-Y', 'auto');
+    }
+
+    $('.burger_m').click(function () {
+        $('.gnb-depth2_m').removeClass('active')
+
+        $(this).siblings('.burger_menu').show();
+
+        $('.dim').show();
+
+        $('.dim').on('touchmove', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        });
+
+        $('.dim').on('mousewheel', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        });
+
+        $('html').css('overflow-Y', 'hidden');
+
+        $('.dim').click(function(e) {
+            closeBurgerMenu(btnClose)
+        });
+    });
+
+    btnClose.click(function(e) {
+        console.log(this);
+        closeBurgerMenu(this)
+    });
+
+    $('.gnb-depth1_m > li > a').click(function(e){
+        $(e.currentTarget).siblings('.gnb-depth2_m').toggleClass('active')
+    })
+    $('.has-depth_m > a').click(function(e){
+        $(e.currentTarget).siblings('.gnb-depth3_m').toggleClass('active')
+    })
+})
