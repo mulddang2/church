@@ -1,34 +1,242 @@
-/* Google Web Fonts CDN */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
-
-/* Color */
 :root {
+    /*color*/
     --light-green: #83ae50;
     --light-yellow: #f4eedb;
+    --point-green: #337752;
+
+    /* font-size tablet */
+    --minimum-t: clamp(0.8rem, 0.71vw, 1rem);
+    --basic-t: clamp(1.1rem, 0.95vw, 1.4rem);
+    --enhance-t: clamp(1.4rem, 1.26vw, 1.8rem);
+    --h1-t: clamp(2.9rem, 2.13vw, 3.6rem);
+    --h2-t: clamp(2.2rem, 1.97vw, 2.7rem);
+    --h3-t: clamp(1.7rem, 1.58vw, 2.1rem);
+
 }
 
-/* reset */
-body, div, ul, p, h1, h2, h3 {
-    font-family: "Noto Sans KR", sans-serif;
-    margin: 0;
+* {
     padding: 0;
-    box-sizing: border-box;
-    word-break: keep-all;
-}
-a {
+    margin: 0;
+    list-style: none;
     text-decoration: none;
 }
-ul, li {
-    list-style: none;
+html {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 62.5%;
 }
 button {
-    border: none;
+    font-size: inherit;
+    font-family: inherit;
     margin: 0;
     padding: 0;
-    overflow: visible;
-    background: transparent;
+    background: none;
+    border: none;
     cursor: pointer;
+    text-transform: none;
+    vertical-align: middle;
 }
 
-/* font Size */
-body { font-size: 16px;}
+/* 메인사진 페이저  */
+#main .mainvisual .slick-dots li {
+    background-color: #fff;
+    border-radius: 50%;
+}
+#main .mainvisual ul li.pager a {
+    background-color: #fff;
+    border-radius: 50%;
+}
+.mainvisual li.pager.pager_current a {
+    background-color: var(--light-green);
+}
+
+/* 메인 레이아웃  */
+.content:nth-of-type(2n) {
+    background-color: var(--light-yellow);
+
+}
+
+/* content 공통  */
+div[class^="title"] h2 {
+    color: #333;
+    font-weight: 700;
+}
+/* ct1  */
+.title_mini span {
+    color: var(--light-green);
+}
+.title_mini {
+    width: fit-content;
+    border-bottom: 0.19vh solid var(--light-green);
+
+}
+.ct1 .inner_text ul {
+    color: #423737;
+
+}
+.ct1 .inner_text ul li {
+    font-weight: 300;
+}
+.ct1 .inner_text ul li::before {
+    background-color: var(--light-green);
+
+}
+.ct1_img {
+    background: url("./images/church.png") no-repeat center / contain;
+}   
+.title_desc {
+    color: #000;
+    font-weight: 300;
+
+}
+/* 센터 타이틀  */
+.title_center_text span {
+    color: var(--light-green);
+    display: block;
+    width: fit-content;
+    border-bottom: 1px solid var(--light-green);
+
+
+}
+
+/* ---- 클래스명 ct_ 를 사용한 선택자 -----  */
+
+a.ct_prev.prev:hover,
+a.ct_next.next:hover {
+    display: inline-block;
+    border: 1px solid #333;
+
+}
+a.ct_prev.prev {
+    background: url("./images/icon/arrow_prev.svg") no-repeat center;
+
+}
+a.ct_next.next {
+    background: url("./images/icon/arrow_next.svg") no-repeat center;
+
+}
+
+/* 전체보기 글씨  */
+a.all {
+    text-decoration: underline;
+    color: #645656;
+
+}
+a.all:hover, a.all_tab_m:hover {
+    color: var(--light-green);
+}
+/* ct3 우리소식 컨텐츠  */
+.news li {
+    background-color: #fff;
+    border: 1px solid rgba(137, 126, 126, 0.83);
+}
+
+
+
+.news_title {
+    color: #423737;
+    font-weight: 700;
+
+}
+.news_date {
+    font-weight: 400;
+    color: #555555;
+}
+.new {
+    background-color: #83ae50;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+
+}
+
+/* ct4 갤러리 컨텐츠  */
+.gallery_box img {
+    background-color: rgba(23, 23, 23, 0.5);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.16);
+}
+.slick-current.gallery_box img {
+    box-shadow: 0px 11px 11px 2px rgba(23, 23, 23, 0.5);
+}
+
+
+/* ct5 게시판 컨텐츠  */
+.board_box1 {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+.board_boxs {
+    border-bottom: 1px solid #333333;
+
+}
+.board_left {
+    color: #333333;
+
+}
+.board_left:hover {
+    color: #070707;
+}
+.board_title:hover {
+    font-weight: 500;
+}
+.board_index {
+    font-weight: 700;
+
+}
+.board_title {
+    font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.board_right {
+    color: #888888;
+
+}
+.middle_line {
+    background-color: #888888;
+
+}
+
+
+/*푸터*/
+.footer_nav {
+    border-top: 0.1rem solid rgba(222, 222, 222, 0.83);
+    border-bottom: 1px solid rgba(222, 222, 222, 0.83);
+}
+#footer .footer_nav a:hover {
+    color: var(--light-green);
+}
+.footer_main {
+    background-color: var(--light-green);
+
+}
+#footer ul li a {
+    font-weight: 400;
+    color: #162406;
+
+}
+.footer_content {
+    color: #fff;
+
+}
+#footer h1.logo_w {
+    background: url("./images/logoW.png") no-repeat;
+    background-size: contain;
+
+}
+.footer_content .menu span {
+    border: 0.05vw solid rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.35);
+}
+.footer_address,
+.copyright {
+    font-weight: 400;
+    color: #ffffff;
+
+}
+.footer_content .menu a {
+    color: #ffffff;
+    font-weight: 400;
+}

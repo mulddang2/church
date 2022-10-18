@@ -36,8 +36,6 @@
     }
     .mainvisual_m img {
         width: 100%;
-        /* height:  calc(100vh - 480px); */
-        /* height: 60vh; */
         object-fit: cover;
         object-position: left center;
     }
@@ -66,20 +64,13 @@
     .mainvisual_m > .slick-dots li.slick-active {
         width: 4.96vw;
         height: 1vw;
-        /* border: 0.05vw solid var(--light-green); */
-        /* border-radius: 11px; */
-        /* background-color: var(--light-green); */
     }
     .ct1 > .inner {
-        /* width: 94%; */
+        width: 94%;
         justify-content: space-around;
-        /* display: flex; */
-        /* margin: 0 auto; */
-        /* padding: 0 3%; */
-        /* border: 1px solid #000; */
     }
     .title_mini span {
-        font-size: var(--minimum-t);
+        font-size: var(--enhance-t);
     }
     .title_text h2 {
         font-size: var(--h2-t);
@@ -92,14 +83,12 @@
         content: "";
         width: 0.2vw;
         vertical-align: baseline;
-        margin-right: 0.6vw
+        margin-right: 0.6vw;
+        height: 1.5vh;
     }
     .ct1 .inner_text ul li:not(:last-child) {
         margin-bottom: 1.27vh;
     }
-    /* .title_text.first h2 {
-        margin: 0.74vh 0 1.11vh;
-    } */
     .ct1 .inner_text ul {
         width: 200px;
         margin-top: 6.85vh;
@@ -116,26 +105,14 @@
         padding-bottom: 6.52vh;
     }
     .title_inner {
-        /* border: 1px solid #000; */
         width: 94%;
-        /* margin: 0 auto; */
-        /* text-align: center; */
         padding-top: 6.93vw;
     }
     .title_center_text span {
-        /* width: fit-content; */
-        /* margin: 0 auto; */
-        font-size: var(--minimum-t);
+        font-size: var(--enhance-t);
     }
-    /* .title_center {
-        position: relative;   
-        margin-bottom: 6.02vh;
-
-    } */
     div[class^="title"] h2 {
-        font-size: var(--h2-t);
-        /* width: 11.35vw; */
-        /* border: 1px solid #000; */
+        font-size: 2.5rem;
         margin: 0 auto;
     }
     /* 전체보기 글씨  */

@@ -13,7 +13,9 @@
     .ct1_img {
         width: 61.93vw;
         height: 38.56vh;
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        /* margin-top: 2.75vh; */
+        margin: 2.75vh auto 0;
     }
     .ct1 .inner_text ul li::before {
         width: 0.5vw;
@@ -36,7 +38,7 @@
     }
     .ct1 {
         padding-top: 15px;
-        padding-bottom: 0;
+        /* padding-bottom: 0; */
     }
     .ct1 > .inner {
         text-align: center;
