@@ -193,10 +193,6 @@
 
     a.all {
         font-size: clamp(1.5rem, 0.94vw, 1.9rem);
-        /* position: absolute; */
-        /* right: 0; */
-        /* top: 0; */
-        /* margin-top: 52px; */
     }
     .ct3_text {
         width: 100%;
@@ -212,13 +208,8 @@
 
     }
     .new {
-        /* position: absolute;
-        width: 4.58vw;
-        height: 6.02vh;
-        font-size: 1.6rem;
-        line-height: 6.02vh; */
         top: -2px;
-        padding: 5px;
+        padding: 8px;
     }
     .board_box1, .board_boxs {
         min-height: 7.74vh;

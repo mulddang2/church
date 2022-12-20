@@ -63,11 +63,11 @@ div[class^="title"] h2 {
 }
 /* ct1  */
 .title_mini span {
-    color: var(--light-green);
+    color: var(--point-green);
 }
 .title_mini {
     width: fit-content;
-    border-bottom: 0.19vh solid var(--light-green);
+    border-bottom: 0.19vh solid var(--point-green);
 
 }
 .ct1 .inner_text ul {
@@ -91,10 +91,10 @@ div[class^="title"] h2 {
 }
 /* 센터 타이틀  */
 .title_center_text span {
-    color: var(--light-green);
+    color:  var(--point-green);
     display: block;
     width: fit-content;
-    border-bottom: 1px solid var(--light-green);
+    border-bottom: 1px solid  var(--point-green);
 
 
 }
@@ -143,7 +143,7 @@ a.all:hover, a.all_tab_m:hover {
     color: #555555;
 }
 .new {
-    background-color: #83ae50;
+    background-color:  var(--point-green);
     font-weight: 600;
     color: #fff;
     text-align: center;
@@ -191,7 +191,7 @@ a.all:hover, a.all_tab_m:hover {
 
 }
 .board_right {
-    color: #888888;
+    color: #2D4635;
 
 }
 .middle_line {
@@ -200,7 +200,7 @@ a.all:hover, a.all_tab_m:hover {
 }
 
 
-/*푸터*/
+/* Footer */
 .footer_nav {
     border-top: 0.1rem solid rgba(222, 222, 222, 0.83);
     border-bottom: 1px solid rgba(222, 222, 222, 0.83);
@@ -209,7 +209,7 @@ a.all:hover, a.all_tab_m:hover {
     color: var(--light-green);
 }
 .footer_main {
-    background-color: var(--light-green);
+    background-color: var(--point-green);
 
 }
 #footer ul li a {
