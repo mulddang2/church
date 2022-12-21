@@ -208,17 +208,29 @@
 }
 .gnb-depth2 > li > a:hover,
 .gnb-depth3 > li > a:hover {
-    color: var(--light-green);
+    /* color: var(--light-green); */
     font-weight: 500;
 }
+.gnb-depth2 > li > a:hover {
+    background-color: #407156;
+    color: #fff;
+    
+}
+.gnb-depth2 > li > a:hover::before,
+.gnb-depth2 > li > a:hover::after {
+    background-color: #fff;
+}
+
 .gnb-depth3.active {
     display: block;
 }
-.gnb-depth3 li a {
+.gnb-depth3 > li > a {
     font-size: 13px;
-    font-weight: 300;
+    /* font-weight: 300; */
     background-color: #f4eedb;;
-
+}
+.gnb-depth3 > li > a:hover {
+    text-decoration: underline;
 }
 .has-depth {
     overflow: hidden;
